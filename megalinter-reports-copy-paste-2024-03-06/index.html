@@ -1,29 +1,9 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Copy/Paste Detector Report</title><link href="styles/tailwind.css" rel="stylesheet"><link href="styles/prism.css" rel="stylesheet"></head><body class="bg-gray-100"><header class="bg-white shadow py-4"><div class="container mx-auto px-4"><h1 class="text-3xl font-semibold text-gray-800">jscpd - copy/paste report</h1></div></header><main class="container mx-auto my-8 p-4 bg-white shadow rounded"><section class="mb-8" id="dashboard"><h2 class="text-2xl font-semibold text-gray-700 mb-4">Dashboard</h2><div class="grid grid-cols-4 gap-4"><div class="bg-blue-200 p-4 rounded text-center"><h3 class="text-lg font-semibold text-blue-800 mb-2">Total Files</h3><span class="text-4xl font-bold text-blue-800">125</span></div><div class="bg-green-200 p-4 rounded text-center"><h3 class="text-lg font-semibold text-green-800 mb-2">Total Lines of Code</h3><span class="text-4xl font-bold text-green-800">6040</span></div><div class="bg-yellow-200 p-4 rounded text-center"><h3 class="text-lg font-semibold text-yellow-800 mb-2">Number of Clones</h3><span class="text-4xl font-bold text-yellow-800">76</span></div><div class="bg-red-200 p-4 rounded text-center"><h3 class="text-lg font-semibold text-red-800 mb-2">Duplicated Lines</h3><span class="text-4xl font-bold text-red-800">845 (13.99%)</span></div></div></section><section class="mb-8" id="formats"><h2 class="text-2xl font-semibold text-gray-700 mb-4">Formats with Duplications</h2><table class="w-full table-auto"><thead><tr class="bg-gray-200 text-gray-600 uppercase text-sm leading-normal"><th class="py-3 px-6 text-left">Format</th><th class="py-3 px-6 text-left">Files</th><th class="py-3 px-6 text-left">Lines</th><th class="py-3 px-6 text-left">Clones</th><th class="py-3 px-6 text-left">Duplicated Lines</th><th class="py-3 px-6 text-left">Duplicated Tokens</th></tr></thead><tbody><tr class="bg-white border-b border-gray-200 text-gray-800 text-sm"><td class="py-3 px-6"><a class="text-blue-600 hover:underline" href="#groovy-clones">groovy</a></td><td class="py-3 px-6">96</td><td class="py-3 px-6">4890</td><td class="py-3 px-6">74</td><td class="py-3 px-6">781</td><td class="py-3 px-6">7318</td></tr><tr class="bg-white border-b border-gray-200 text-gray-800 text-sm"><td class="py-3 px-6"><a class="text-blue-600 hover:underline" href="#properties-clones">properties</a></td><td class="py-3 px-6">20</td><td class="py-3 px-6">893</td><td class="py-3 px-6">0</td><td class="py-3 px-6">0</td><td class="py-3 px-6">0</td></tr><tr class="bg-white border-b border-gray-200 text-gray-800 text-sm"><td class="py-3 px-6"><a class="text-blue-600 hover:underline" href="#sql-clones">sql</a></td><td class="py-3 px-6">1</td><td class="py-3 px-6">26</td><td class="py-3 px-6">0</td><td class="py-3 px-6">0</td><td class="py-3 px-6">0</td></tr><tr class="bg-white border-b border-gray-200 text-gray-800 text-sm"><td class="py-3 px-6"><a class="text-blue-600 hover:underline" href="#bash-clones">bash</a></td><td class="py-3 px-6">8</td><td class="py-3 px-6">231</td><td class="py-3 px-6">2</td><td class="py-3 px-6">64</td><td class="py-3 px-6">359</td></tr></tbody></table></section><section class="mb-8" id="txt-clones"><a name="groovy-clones"></a><h2 class="text-2xl font-semibold text-gray-700 mb-4">groovy</h2><div class="divide-y divide-gray-200 border-b-2"><div class="py-4"><p class="text-gray-600">service/src/main/groovy/org/olf/templateConfig/templateMetadataRule/TemplateMetadataRuleHelpers.groovy (Line 5:1 - Line 25:28), service/src/main/groovy/org/olf/templateConfig/templateMetadataRule/TemplateMetadataRuleTypeHelpers.groovy (Line 5:1 - Line 25:32)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn0" onclick="toggleCodeBlock('cloneGroup0', 'expandBtn0', 'collapseBtn0')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn0" onclick="toggleCodeBlock('cloneGroup0', 'expandBtn0', 'collapseBtn0')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup0"><code class="language-groovy text-sm text-gray-800">import grails.databinding.BindUsing
-import grails.databinding.SimpleMapDataBindingSource
-import grails.util.Holders
-import grails.validation.Validateable
-import grails.web.databinding.DataBindingUtils
-import grails.web.databinding.GrailsWebDataBinder
-import groovy.transform.CompileStatic
-import groovy.util.logging.Slf4j
-
-import java.util.regex.Pattern
-
-import org.codehaus.groovy.runtime.InvokerHelper
-import org.grails.datastore.gorm.GormValidateable
-import org.grails.datastore.mapping.dirty.checking.DirtyCheckable
-import org.springframework.validation.Errors
-import com.k_int.web.toolkit.refdata.RefdataValue
-import com.k_int.web.toolkit.utils.GormUtils
-
-@CompileStatic
-@Slf4j
-public class TemplateMetadataRuleHelpers</code></pre></div><div class="py-4"><p class="text-gray-600">service/src/main/groovy/org/olf/templating/LabelTemplateHelpers.groovy (Line 29:2 - Line 34:11), service/src/main/groovy/org/olf/templating/LabelTemplateHelpers.groovy (Line 14:2 - Line 21:13)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn1" onclick="toggleCodeBlock('cloneGroup1', 'expandBtn1', 'collapseBtn1')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn1" onclick="toggleCodeBlock('cloneGroup1', 'expandBtn1', 'collapseBtn1')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup1"><code class="language-groovy text-sm text-gray-800">(final Object context, final Object param1, final Object param2, final Options options) {
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Copy/Paste Detector Report</title><link href="styles/tailwind.css" rel="stylesheet"><link href="styles/prism.css" rel="stylesheet"></head><body class="bg-gray-100"><header class="bg-white shadow py-4"><div class="container mx-auto px-4"><h1 class="text-3xl font-semibold text-gray-800">jscpd - copy/paste report</h1></div></header><main class="container mx-auto my-8 p-4 bg-white shadow rounded"><section class="mb-8" id="dashboard"><h2 class="text-2xl font-semibold text-gray-700 mb-4">Dashboard</h2><div class="grid grid-cols-4 gap-4"><div class="bg-blue-200 p-4 rounded text-center"><h3 class="text-lg font-semibold text-blue-800 mb-2">Total Files</h3><span class="text-4xl font-bold text-blue-800">125</span></div><div class="bg-green-200 p-4 rounded text-center"><h3 class="text-lg font-semibold text-green-800 mb-2">Total Lines of Code</h3><span class="text-4xl font-bold text-green-800">6040</span></div><div class="bg-yellow-200 p-4 rounded text-center"><h3 class="text-lg font-semibold text-yellow-800 mb-2">Number of Clones</h3><span class="text-4xl font-bold text-yellow-800">30</span></div><div class="bg-red-200 p-4 rounded text-center"><h3 class="text-lg font-semibold text-red-800 mb-2">Duplicated Lines</h3><span class="text-4xl font-bold text-red-800">317 (5.25%)</span></div></div></section><section class="mb-8" id="formats"><h2 class="text-2xl font-semibold text-gray-700 mb-4">Formats with Duplications</h2><table class="w-full table-auto"><thead><tr class="bg-gray-200 text-gray-600 uppercase text-sm leading-normal"><th class="py-3 px-6 text-left">Format</th><th class="py-3 px-6 text-left">Files</th><th class="py-3 px-6 text-left">Lines</th><th class="py-3 px-6 text-left">Clones</th><th class="py-3 px-6 text-left">Duplicated Lines</th><th class="py-3 px-6 text-left">Duplicated Tokens</th></tr></thead><tbody><tr class="bg-white border-b border-gray-200 text-gray-800 text-sm"><td class="py-3 px-6"><a class="text-blue-600 hover:underline" href="#groovy-clones">groovy</a></td><td class="py-3 px-6">96</td><td class="py-3 px-6">4890</td><td class="py-3 px-6">28</td><td class="py-3 px-6">253</td><td class="py-3 px-6">3114</td></tr><tr class="bg-white border-b border-gray-200 text-gray-800 text-sm"><td class="py-3 px-6"><a class="text-blue-600 hover:underline" href="#properties-clones">properties</a></td><td class="py-3 px-6">20</td><td class="py-3 px-6">893</td><td class="py-3 px-6">0</td><td class="py-3 px-6">0</td><td class="py-3 px-6">0</td></tr><tr class="bg-white border-b border-gray-200 text-gray-800 text-sm"><td class="py-3 px-6"><a class="text-blue-600 hover:underline" href="#sql-clones">sql</a></td><td class="py-3 px-6">1</td><td class="py-3 px-6">26</td><td class="py-3 px-6">0</td><td class="py-3 px-6">0</td><td class="py-3 px-6">0</td></tr><tr class="bg-white border-b border-gray-200 text-gray-800 text-sm"><td class="py-3 px-6"><a class="text-blue-600 hover:underline" href="#bash-clones">bash</a></td><td class="py-3 px-6">8</td><td class="py-3 px-6">231</td><td class="py-3 px-6">2</td><td class="py-3 px-6">64</td><td class="py-3 px-6">359</td></tr></tbody></table></section><section class="mb-8" id="txt-clones"><a name="groovy-clones"></a><h2 class="text-2xl font-semibold text-gray-700 mb-4">groovy</h2><div class="divide-y divide-gray-200 border-b-2"><div class="py-4"><p class="text-gray-600">service/src/main/groovy/org/olf/templating/LabelTemplateHelpers.groovy (Line 29:2 - Line 34:11), service/src/main/groovy/org/olf/templating/LabelTemplateHelpers.groovy (Line 14:2 - Line 21:13)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn0" onclick="toggleCodeBlock('cloneGroup0', 'expandBtn0', 'collapseBtn0')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn0" onclick="toggleCodeBlock('cloneGroup0', 'expandBtn0', 'collapseBtn0')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup0"><code class="language-groovy text-sm text-gray-800">(final Object context, final Object param1, final Object param2, final Options options) {
     return Optional.ofNullable(Objects.toString(param1, &quot;&quot;))
       .map({ final String param -&gt; &quot;(?=(?&lt;=${regexSafe(param)}))&quot; as String })
       .map({ final String regex -&gt;
         final op = { String subject -&gt;
-          return subject.replaceAll</code></pre></div><div class="py-4"><p class="text-gray-600">service/src/main/groovy/org/olf/templating/LabelTemplateHelpers.groovy (Line 44:2 - Line 55:16), service/src/main/groovy/org/olf/templating/LabelTemplateHelpers.groovy (Line 18:2 - Line 29:15)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn2" onclick="toggleCodeBlock('cloneGroup2', 'expandBtn2', 'collapseBtn2')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn2" onclick="toggleCodeBlock('cloneGroup2', 'expandBtn2', 'collapseBtn2')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup2"><code class="language-groovy text-sm text-gray-800">as String })
+          return subject.replaceAll</code></pre></div><div class="py-4"><p class="text-gray-600">service/src/main/groovy/org/olf/templating/LabelTemplateHelpers.groovy (Line 44:2 - Line 55:16), service/src/main/groovy/org/olf/templating/LabelTemplateHelpers.groovy (Line 18:2 - Line 29:15)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn1" onclick="toggleCodeBlock('cloneGroup1', 'expandBtn1', 'collapseBtn1')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn1" onclick="toggleCodeBlock('cloneGroup1', 'expandBtn1', 'collapseBtn1')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup1"><code class="language-groovy text-sm text-gray-800">as String })
       .map({ final String regex -&gt;
         final op = { String subject -&gt; 
           return subject.replaceFirst(regex, Objects.toString(param2, &quot;&quot;))
@@ -34,12 +14,12 @@ public class TemplateMetadataRuleHelpers</code></pre></div><div class="py-4"><p 
       .orElse(null)
   }
   
-  public static final CharSequence insertBeforeAll</code></pre></div><div class="py-4"><p class="text-gray-600">service/src/main/groovy/org/olf/templating/LabelTemplateHelpers.groovy (Line 55:2 - Line 60:11), service/src/main/groovy/org/olf/templating/LabelTemplateHelpers.groovy (Line 42:2 - Line 47:13)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn3" onclick="toggleCodeBlock('cloneGroup3', 'expandBtn3', 'collapseBtn3')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn3" onclick="toggleCodeBlock('cloneGroup3', 'expandBtn3', 'collapseBtn3')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup3"><code class="language-groovy text-sm text-gray-800">(final Object context, final Object param1, final Object param2, final Options options) {
+  public static final CharSequence insertBeforeAll</code></pre></div><div class="py-4"><p class="text-gray-600">service/src/main/groovy/org/olf/templating/LabelTemplateHelpers.groovy (Line 55:2 - Line 60:11), service/src/main/groovy/org/olf/templating/LabelTemplateHelpers.groovy (Line 42:2 - Line 47:13)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn2" onclick="toggleCodeBlock('cloneGroup2', 'expandBtn2', 'collapseBtn2')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn2" onclick="toggleCodeBlock('cloneGroup2', 'expandBtn2', 'collapseBtn2')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup2"><code class="language-groovy text-sm text-gray-800">(final Object context, final Object param1, final Object param2, final Options options) {
     return Optional.ofNullable(Objects.toString(param1, &quot;&quot;))
       .map({ final String param -&gt; &quot;(?&lt;=(?=${regexSafe(param)}))&quot; as String })
       .map({ final String regex -&gt;
         final op = { String subject -&gt;
-          return subject.replaceAll</code></pre></div><div class="py-4"><p class="text-gray-600">service/src/main/groovy/org/olf/templating/LabelTemplateHelpers.groovy (Line 57:2 - Line 68:15), service/src/main/groovy/org/olf/templating/LabelTemplateHelpers.groovy (Line 31:2 - Line 42:13)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn4" onclick="toggleCodeBlock('cloneGroup4', 'expandBtn4', 'collapseBtn4')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn4" onclick="toggleCodeBlock('cloneGroup4', 'expandBtn4', 'collapseBtn4')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup4"><code class="language-groovy text-sm text-gray-800">as String })
+          return subject.replaceAll</code></pre></div><div class="py-4"><p class="text-gray-600">service/src/main/groovy/org/olf/templating/LabelTemplateHelpers.groovy (Line 57:2 - Line 68:15), service/src/main/groovy/org/olf/templating/LabelTemplateHelpers.groovy (Line 31:2 - Line 42:13)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn3" onclick="toggleCodeBlock('cloneGroup3', 'expandBtn3', 'collapseBtn3')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn3" onclick="toggleCodeBlock('cloneGroup3', 'expandBtn3', 'collapseBtn3')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup3"><code class="language-groovy text-sm text-gray-800">as String })
       .map({ final String regex -&gt;
         final op = { String subject -&gt;
           return subject.replaceAll(regex, Objects.toString(param2, &quot;&quot;))
@@ -50,35 +30,7 @@ public class TemplateMetadataRuleHelpers</code></pre></div><div class="py-4"><p 
       .orElse(null)
   }
   
-  public static final CharSequence removeProtocol</code></pre></div><div class="py-4"><p class="text-gray-600">service/src/main/groovy/org/olf/recurrence/RecurrenceRuleHelpers.groovy (Line 3:1 - Line 17:4), service/src/main/groovy/org/olf/templateConfig/templateMetadataRule/TemplateMetadataRuleTypeHelpers.groovy (Line 5:1 - Line 19:16)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn5" onclick="toggleCodeBlock('cloneGroup5', 'expandBtn5', 'collapseBtn5')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn5" onclick="toggleCodeBlock('cloneGroup5', 'expandBtn5', 'collapseBtn5')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup5"><code class="language-groovy text-sm text-gray-800">import grails.databinding.BindUsing
-import grails.databinding.SimpleMapDataBindingSource
-import grails.util.Holders
-import grails.validation.Validateable
-import grails.web.databinding.DataBindingUtils
-import grails.web.databinding.GrailsWebDataBinder
-import groovy.transform.CompileStatic
-import groovy.util.logging.Slf4j
-
-import java.util.regex.Pattern
-
-import org.codehaus.groovy.runtime.InvokerHelper
-import org.grails.datastore.gorm.GormValidateable
-import org.grails.datastore.mapping.dirty.checking.DirtyCheckable
-import org.olf</code></pre></div><div class="py-4"><p class="text-gray-600">service/src/main/groovy/org/olf/omission/OmissionRuleHelpers.groovy (Line 3:1 - Line 17:9), service/src/main/groovy/org/olf/templateConfig/templateMetadataRule/TemplateMetadataRuleTypeHelpers.groovy (Line 5:1 - Line 17:11)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn6" onclick="toggleCodeBlock('cloneGroup6', 'expandBtn6', 'collapseBtn6')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn6" onclick="toggleCodeBlock('cloneGroup6', 'expandBtn6', 'collapseBtn6')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup6"><code class="language-groovy text-sm text-gray-800">import grails.databinding.BindUsing
-import grails.databinding.SimpleMapDataBindingSource
-import grails.util.Holders
-import grails.validation.Validateable
-import grails.web.databinding.DataBindingUtils
-import grails.web.databinding.GrailsWebDataBinder
-import groovy.transform.CompileStatic
-import groovy.util.logging.Slf4j
-
-import java.util.regex.Pattern
-
-import org.codehaus.groovy.runtime.InvokerHelper
-import org.grails.datastore.gorm.GormValidateable
-import org.grails.datastore.mapping.dirty.checking.DirtyCheckable
-import org.olf.omission</code></pre></div><div class="py-4"><p class="text-gray-600">service/src/main/groovy/org/olf/omission/OmissionRuleHelpers.groovy (Line 33:2 - Line 46:85), service/src/main/groovy/org/olf/recurrence/RecurrenceRuleHelpers.groovy (Line 33:2 - Line 46:91)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn7" onclick="toggleCodeBlock('cloneGroup7', 'expandBtn7', 'collapseBtn7')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn7" onclick="toggleCodeBlock('cloneGroup7', 'expandBtn7', 'collapseBtn7')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup7"><code class="language-groovy text-sm text-gray-800">obj, SimpleMapDataBindingSource source) {
+  public static final CharSequence removeProtocol</code></pre></div><div class="py-4"><p class="text-gray-600">service/src/main/groovy/org/olf/omission/OmissionRuleHelpers.groovy (Line 33:2 - Line 46:85), service/src/main/groovy/org/olf/recurrence/RecurrenceRuleHelpers.groovy (Line 33:2 - Line 46:91)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn4" onclick="toggleCodeBlock('cloneGroup4', 'expandBtn4', 'collapseBtn4')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn4" onclick="toggleCodeBlock('cloneGroup4', 'expandBtn4', 'collapseBtn4')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup4"><code class="language-groovy text-sm text-gray-800">obj, SimpleMapDataBindingSource source) {
 		
 		String patternTypeString = null
 		if ( source['patternType'] &amp;&amp; RefdataValue.class.isAssignableFrom(source['patternType'].class)) {
@@ -91,7 +43,7 @@ import org.olf.omission</code></pre></div><div class="py-4"><p class="text-gray-
 		final String patternClassString = RGX_PATTERN_CLASS.matcher(patternTypeString)
 				.replaceAll{ match -&gt; match.group(1).toUpperCase() }
 
-		final String patternClasspathString = &quot;org.olf.omission.omissionPattern.OmissionPattern${patternClassString.capitalize()}&quot;</code></pre></div><div class="py-4"><p class="text-gray-600">service/src/main/groovy/org/olf/omission/OmissionRuleHelpers.groovy (Line 48:16 - Line 58:51), service/src/main/groovy/org/olf/recurrence/RecurrenceRuleHelpers.groovy (Line 48:18 - Line 58:53)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn8" onclick="toggleCodeBlock('cloneGroup8', 'expandBtn8', 'collapseBtn8')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn8" onclick="toggleCodeBlock('cloneGroup8', 'expandBtn8', 'collapseBtn8')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup8"><code class="language-groovy text-sm text-gray-800">&gt; rc = Class.forName(patternClasspathString)
+		final String patternClasspathString = &quot;org.olf.omission.omissionPattern.OmissionPattern${patternClassString.capitalize()}&quot;</code></pre></div><div class="py-4"><p class="text-gray-600">service/src/main/groovy/org/olf/omission/OmissionRuleHelpers.groovy (Line 48:16 - Line 58:51), service/src/main/groovy/org/olf/recurrence/RecurrenceRuleHelpers.groovy (Line 48:18 - Line 58:53)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn5" onclick="toggleCodeBlock('cloneGroup5', 'expandBtn5', 'collapseBtn5')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn5" onclick="toggleCodeBlock('cloneGroup5', 'expandBtn5', 'collapseBtn5')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup5"><code class="language-groovy text-sm text-gray-800">&gt; rc = Class.forName(patternClasspathString)
 
 		final String currentId = source['pattern']?.getAt(&quot;id&quot;)?.toString()
 
@@ -101,7 +53,7 @@ import org.olf.omission</code></pre></div><div class="py-4"><p class="text-gray-
 
 		dataBinder.bind( rp, new SimpleMapDataBindingSource(source['pattern'] as Map) )
 		
-		log.debug ('Binding Omission Pattern of type {} to Object {}'</code></pre></div><div class="py-4"><p class="text-gray-600">service/src/main/groovy/org/olf/omission/OmissionRuleHelpers.groovy (Line 68:2 - Line 79:2), service/src/main/groovy/org/olf/recurrence/RecurrenceRuleHelpers.groovy (Line 68:2 - Line 79:2)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn9" onclick="toggleCodeBlock('cloneGroup9', 'expandBtn9', 'collapseBtn9')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn9" onclick="toggleCodeBlock('cloneGroup9', 'expandBtn9', 'collapseBtn9')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup9"><code class="language-groovy text-sm text-gray-800">instance, Errors err ) {
+		log.debug ('Binding Omission Pattern of type {} to Object {}'</code></pre></div><div class="py-4"><p class="text-gray-600">service/src/main/groovy/org/olf/omission/OmissionRuleHelpers.groovy (Line 68:2 - Line 79:2), service/src/main/groovy/org/olf/recurrence/RecurrenceRuleHelpers.groovy (Line 68:2 - Line 79:2)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn6" onclick="toggleCodeBlock('cloneGroup6', 'expandBtn6', 'collapseBtn6')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn6" onclick="toggleCodeBlock('cloneGroup6', 'expandBtn6', 'collapseBtn6')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup6"><code class="language-groovy text-sm text-gray-800">instance, Errors err ) {
 		GormValidateable rpVal = value as GormValidateable
 		
 		if (!rpVal.validate(deepValidate: false)) { // Make sure this validation isn't fired again.
@@ -112,27 +64,7 @@ import org.olf.omission</code></pre></div><div class="py-4"><p class="text-gray-
 			}
 		}
 	}
-}</code></pre></div><div class="py-4"><p class="text-gray-600">service/src/main/groovy/org/olf/combination/CombinationRuleHelpers.groovy (Line 5:1 - Line 25:23), service/src/main/groovy/org/olf/templateConfig/templateMetadataRule/TemplateMetadataRuleTypeHelpers.groovy (Line 5:1 - Line 25:32)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn10" onclick="toggleCodeBlock('cloneGroup10', 'expandBtn10', 'collapseBtn10')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn10" onclick="toggleCodeBlock('cloneGroup10', 'expandBtn10', 'collapseBtn10')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup10"><code class="language-groovy text-sm text-gray-800">import grails.databinding.BindUsing
-import grails.databinding.SimpleMapDataBindingSource
-import grails.util.Holders
-import grails.validation.Validateable
-import grails.web.databinding.DataBindingUtils
-import grails.web.databinding.GrailsWebDataBinder
-import groovy.transform.CompileStatic
-import groovy.util.logging.Slf4j
-
-import java.util.regex.Pattern
-
-import org.codehaus.groovy.runtime.InvokerHelper
-import org.grails.datastore.gorm.GormValidateable
-import org.grails.datastore.mapping.dirty.checking.DirtyCheckable
-import org.springframework.validation.Errors
-import com.k_int.web.toolkit.refdata.RefdataValue
-import com.k_int.web.toolkit.utils.GormUtils
-
-@CompileStatic
-@Slf4j
-public class CombinationRuleHelpers</code></pre></div><div class="py-4"><p class="text-gray-600">service/src/main/groovy/org/olf/combination/CombinationRuleHelpers.groovy (Line 34:2 - Line 47:94), service/src/main/groovy/org/olf/recurrence/RecurrenceRuleHelpers.groovy (Line 33:2 - Line 46:91)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn11" onclick="toggleCodeBlock('cloneGroup11', 'expandBtn11', 'collapseBtn11')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn11" onclick="toggleCodeBlock('cloneGroup11', 'expandBtn11', 'collapseBtn11')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup11"><code class="language-groovy text-sm text-gray-800">obj, SimpleMapDataBindingSource source) {
+}</code></pre></div><div class="py-4"><p class="text-gray-600">service/src/main/groovy/org/olf/combination/CombinationRuleHelpers.groovy (Line 34:2 - Line 47:94), service/src/main/groovy/org/olf/recurrence/RecurrenceRuleHelpers.groovy (Line 33:2 - Line 46:91)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn7" onclick="toggleCodeBlock('cloneGroup7', 'expandBtn7', 'collapseBtn7')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn7" onclick="toggleCodeBlock('cloneGroup7', 'expandBtn7', 'collapseBtn7')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup7"><code class="language-groovy text-sm text-gray-800">obj, SimpleMapDataBindingSource source) {
 		
 		String patternTypeString = null
 		if ( source['patternType'] &amp;&amp; RefdataValue.class.isAssignableFrom(source['patternType'].class)) {
@@ -145,7 +77,7 @@ public class CombinationRuleHelpers</code></pre></div><div class="py-4"><p class
 		final String patternClassString = RGX_PATTERN_CLASS.matcher(patternTypeString)
 				.replaceAll{ match -&gt; match.group(1).toUpperCase() }
 
-		final String patternClasspathString = &quot;org.olf.combination.combinationPattern.CombinationPattern${patternClassString.capitalize()}&quot;</code></pre></div><div class="py-4"><p class="text-gray-600">service/src/main/groovy/org/olf/combination/CombinationRuleHelpers.groovy (Line 49:19 - Line 59:54), service/src/main/groovy/org/olf/recurrence/RecurrenceRuleHelpers.groovy (Line 48:18 - Line 58:53)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn12" onclick="toggleCodeBlock('cloneGroup12', 'expandBtn12', 'collapseBtn12')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn12" onclick="toggleCodeBlock('cloneGroup12', 'expandBtn12', 'collapseBtn12')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup12"><code class="language-groovy text-sm text-gray-800">&gt; rc = Class.forName(patternClasspathString)
+		final String patternClasspathString = &quot;org.olf.combination.combinationPattern.CombinationPattern${patternClassString.capitalize()}&quot;</code></pre></div><div class="py-4"><p class="text-gray-600">service/src/main/groovy/org/olf/combination/CombinationRuleHelpers.groovy (Line 49:19 - Line 59:54), service/src/main/groovy/org/olf/recurrence/RecurrenceRuleHelpers.groovy (Line 48:18 - Line 58:53)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn8" onclick="toggleCodeBlock('cloneGroup8', 'expandBtn8', 'collapseBtn8')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn8" onclick="toggleCodeBlock('cloneGroup8', 'expandBtn8', 'collapseBtn8')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup8"><code class="language-groovy text-sm text-gray-800">&gt; rc = Class.forName(patternClasspathString)
 
 		final String currentId = source['pattern']?.getAt(&quot;id&quot;)?.toString()
 
@@ -155,7 +87,7 @@ public class CombinationRuleHelpers</code></pre></div><div class="py-4"><p class
 
 		dataBinder.bind( rp, new SimpleMapDataBindingSource(source['pattern'] as Map) )
 		
-		log.debug ('Binding Combination Pattern of type {} to Object {}'</code></pre></div><div class="py-4"><p class="text-gray-600">service/src/main/groovy/org/olf/combination/CombinationRuleHelpers.groovy (Line 69:2 - Line 80:2), service/src/main/groovy/org/olf/recurrence/RecurrenceRuleHelpers.groovy (Line 68:2 - Line 79:2)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn13" onclick="toggleCodeBlock('cloneGroup13', 'expandBtn13', 'collapseBtn13')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn13" onclick="toggleCodeBlock('cloneGroup13', 'expandBtn13', 'collapseBtn13')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup13"><code class="language-groovy text-sm text-gray-800">instance, Errors err ) {
+		log.debug ('Binding Combination Pattern of type {} to Object {}'</code></pre></div><div class="py-4"><p class="text-gray-600">service/src/main/groovy/org/olf/combination/CombinationRuleHelpers.groovy (Line 69:2 - Line 80:2), service/src/main/groovy/org/olf/recurrence/RecurrenceRuleHelpers.groovy (Line 68:2 - Line 79:2)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn9" onclick="toggleCodeBlock('cloneGroup9', 'expandBtn9', 'collapseBtn9')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn9" onclick="toggleCodeBlock('cloneGroup9', 'expandBtn9', 'collapseBtn9')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup9"><code class="language-groovy text-sm text-gray-800">instance, Errors err ) {
 		GormValidateable rpVal = value as GormValidateable
 		
 		if (!rpVal.validate(deepValidate: false)) { // Make sure this validation isn't fired again.
@@ -166,44 +98,7 @@ public class CombinationRuleHelpers</code></pre></div><div class="py-4"><p class
 			}
 		}
 	}
-}</code></pre></div><div class="py-4"><p class="text-gray-600">service/grails-app/domain/org/olf/templateConfig/templateMetadataRuleFormat/EnumerationNumericTMRF.groovy (Line 7:1 - Line 15:23), service/grails-app/domain/org/olf/templateConfig/templateMetadataRuleFormat/EnumerationTextualTMRF.groovy (Line 6:1 - Line 14:23)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn14" onclick="toggleCodeBlock('cloneGroup14', 'expandBtn14', 'collapseBtn14')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn14" onclick="toggleCodeBlock('cloneGroup14', 'expandBtn14', 'collapseBtn14')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup14"><code class="language-groovy text-sm text-gray-800">import java.time.LocalDate
-
-import grails.gorm.MultiTenant
-
-import com.k_int.web.toolkit.refdata.CategoryId
-import com.k_int.web.toolkit.refdata.Defaults
-import com.k_int.web.toolkit.refdata.RefdataValue
-
-public class EnumerationNumericTMRF</code></pre></div><div class="py-4"><p class="text-gray-600">service/grails-app/domain/org/olf/templateConfig/templateMetadataRuleFormat/EnumerationNumericLevelTMRF.groovy (Line 1:1 - Line 9:28), service/grails-app/domain/org/olf/templateConfig/templateMetadataRuleFormat/EnumerationTextualLevelTMRF.groovy (Line 1:1 - Line 9:28)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn15" onclick="toggleCodeBlock('cloneGroup15', 'expandBtn15', 'collapseBtn15')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn15" onclick="toggleCodeBlock('cloneGroup15', 'expandBtn15', 'collapseBtn15')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup15"><code class="language-groovy text-sm text-gray-800">package org.olf.templateConfig.templateMetadataRuleFormat
-
-import grails.gorm.MultiTenant
-
-import com.k_int.web.toolkit.refdata.CategoryId
-import com.k_int.web.toolkit.refdata.Defaults
-import com.k_int.web.toolkit.refdata.RefdataValue
-
-class EnumerationNumericLevelTMRF</code></pre></div><div class="py-4"><p class="text-gray-600">service/grails-app/domain/org/olf/templateConfig/templateMetadataRuleFormat/ChronologyMonthTMRF.groovy (Line 8:1 - Line 15:20), service/grails-app/domain/org/olf/templateConfig/templateMetadataRuleFormat/ChronologyYearTMRF.groovy (Line 8:1 - Line 15:19)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn16" onclick="toggleCodeBlock('cloneGroup16', 'expandBtn16', 'collapseBtn16')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn16" onclick="toggleCodeBlock('cloneGroup16', 'expandBtn16', 'collapseBtn16')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup16"><code class="language-groovy text-sm text-gray-800">import java.time.LocalDate
-import java.time.format.DateTimeFormatter
-
-import com.k_int.web.toolkit.refdata.CategoryId
-import com.k_int.web.toolkit.refdata.Defaults
-import com.k_int.web.toolkit.refdata.RefdataValue
-
-public class ChronologyMonthTMRF</code></pre></div><div class="py-4"><p class="text-gray-600">service/grails-app/domain/org/olf/templateConfig/templateMetadataRuleFormat/ChronologyDateTMRF.groovy (Line 1:1 - Line 15:19), service/grails-app/domain/org/olf/templateConfig/templateMetadataRuleFormat/ChronologyYearTMRF.groovy (Line 1:1 - Line 15:19)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn17" onclick="toggleCodeBlock('cloneGroup17', 'expandBtn17', 'collapseBtn17')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn17" onclick="toggleCodeBlock('cloneGroup17', 'expandBtn17', 'collapseBtn17')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup17"><code class="language-groovy text-sm text-gray-800">package org.olf.templateConfig.templateMetadataRuleFormat
-
-import grails.gorm.MultiTenant
-
-import org.olf.templateConfig.templateMetadataRule.TemplateMetadataRule
-import org.olf.internalPiece.templateMetadata.ChronologyTemplateMetadata
-
-import java.time.LocalDate
-import java.time.format.DateTimeFormatter
-
-import com.k_int.web.toolkit.refdata.CategoryId
-import com.k_int.web.toolkit.refdata.Defaults
-import com.k_int.web.toolkit.refdata.RefdataValue
-
-public class ChronologyDateTMRF</code></pre></div><div class="py-4"><p class="text-gray-600">service/grails-app/domain/org/olf/templateConfig/templateMetadataRuleFormat/ChronologyDateTMRF.groovy (Line 49:20 - Line 61:7), service/grails-app/domain/org/olf/templateConfig/templateMetadataRuleFormat/EnumerationNumericTMRF.groovy (Line 30:17 - Line 42:7)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn18" onclick="toggleCodeBlock('cloneGroup18', 'expandBtn18', 'collapseBtn18')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn18" onclick="toggleCodeBlock('cloneGroup18', 'expandBtn18', 'collapseBtn18')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup18"><code class="language-groovy text-sm text-gray-800">(final int n) {
+}</code></pre></div><div class="py-4"><p class="text-gray-600">service/grails-app/domain/org/olf/templateConfig/templateMetadataRuleFormat/ChronologyDateTMRF.groovy (Line 49:20 - Line 61:7), service/grails-app/domain/org/olf/templateConfig/templateMetadataRuleFormat/EnumerationNumericTMRF.groovy (Line 30:17 - Line 42:7)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn10" onclick="toggleCodeBlock('cloneGroup10', 'expandBtn10', 'collapseBtn10')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn10" onclick="toggleCodeBlock('cloneGroup10', 'expandBtn10', 'collapseBtn10')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup10"><code class="language-groovy text-sm text-gray-800">(final int n) {
     if (n &gt;= 11 &amp;&amp; n &lt;= 13) {
         return &quot;th&quot;;
     }
@@ -215,59 +110,13 @@ public class ChronologyDateTMRF</code></pre></div><div class="py-4"><p class="te
     }
 	}
 
-    static</code></pre></div><div class="py-4"><p class="text-gray-600">service/grails-app/domain/org/olf/templateConfig/templateMetadataRule/EnumerationTemplateMetadataRule.groovy (Line 10:1 - Line 18:32), service/grails-app/domain/org/olf/templateConfig/templateMetadataRule/TemplateMetadataRule.groovy (Line 5:1 - Line 13:21)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn19" onclick="toggleCodeBlock('cloneGroup19', 'expandBtn19', 'collapseBtn19')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn19" onclick="toggleCodeBlock('cloneGroup19', 'expandBtn19', 'collapseBtn19')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup19"><code class="language-groovy text-sm text-gray-800">import grails.gorm.MultiTenant
-import grails.databinding.BindUsing
-import grails.databinding.SimpleMapDataBindingSource
-
-import com.k_int.web.toolkit.refdata.CategoryId
-import com.k_int.web.toolkit.refdata.Defaults
-import com.k_int.web.toolkit.refdata.RefdataValue
-
-public class EnumerationTemplateMetadataRule</code></pre></div><div class="py-4"><p class="text-gray-600">service/grails-app/domain/org/olf/templateConfig/templateMetadataRule/ChronologyTemplateMetadataRule.groovy (Line 6:1 - Line 18:31), service/grails-app/domain/org/olf/templateConfig/templateMetadataRule/EnumerationTemplateMetadataRule.groovy (Line 6:1 - Line 13:21)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn20" onclick="toggleCodeBlock('cloneGroup20', 'expandBtn20', 'collapseBtn20')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn20" onclick="toggleCodeBlock('cloneGroup20', 'expandBtn20', 'collapseBtn20')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup20"><code class="language-groovy text-sm text-gray-800">import java.util.regex.Pattern
-
-import java.time.LocalDate
-
-import grails.gorm.MultiTenant
-import grails.databinding.BindUsing
-import grails.databinding.SimpleMapDataBindingSource
-
-import com.k_int.web.toolkit.refdata.CategoryId
-import com.k_int.web.toolkit.refdata.Defaults
-import com.k_int.web.toolkit.refdata.RefdataValue
-
-public class ChronologyTemplateMetadataRule</code></pre></div><div class="py-4"><p class="text-gray-600">service/grails-app/domain/org/olf/templateConfig/templateMetadataRule/ChronologyTemplateMetadataRule.groovy (Line 44:2 - Line 50:2), service/grails-app/domain/org/olf/templateConfig/templateMetadataRule/EnumerationTemplateMetadataRule.groovy (Line 42:2 - Line 48:2)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn21" onclick="toggleCodeBlock('cloneGroup21', 'expandBtn21', 'collapseBtn21')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn21" onclick="toggleCodeBlock('cloneGroup21', 'expandBtn21', 'collapseBtn21')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup21"><code class="language-groovy text-sm text-gray-800">handleType(TemplateMetadataRule rule, LocalDate date, int index) {
+    static</code></pre></div><div class="py-4"><p class="text-gray-600">service/grails-app/domain/org/olf/templateConfig/templateMetadataRule/ChronologyTemplateMetadataRule.groovy (Line 44:2 - Line 50:2), service/grails-app/domain/org/olf/templateConfig/templateMetadataRule/EnumerationTemplateMetadataRule.groovy (Line 42:2 - Line 48:2)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn11" onclick="toggleCodeBlock('cloneGroup11', 'expandBtn11', 'collapseBtn11')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn11" onclick="toggleCodeBlock('cloneGroup11', 'expandBtn11', 'collapseBtn11')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup11"><code class="language-groovy text-sm text-gray-800">handleType(TemplateMetadataRule rule, LocalDate date, int index) {
     final Pattern RGX_RULE_FORMAT = Pattern.compile('_([a-z])')
     String ruleFormatClassString = RGX_RULE_FORMAT.matcher(rule?.ruleType?.templateMetadataRuleFormat?.value).replaceAll { match -&gt; match.group(1).toUpperCase() }
     Class&lt;? extends TemplateMetadataRuleFormat&gt; rfc = Class.forName(&quot;org.olf.templateConfig.templateMetadataRuleFormat.${ruleFormatClassString.capitalize()}TMRF&quot;)
     return rfc.handleFormat(rule, date, index)
   }
-}</code></pre></div><div class="py-4"><p class="text-gray-600">service/grails-app/domain/org/olf/recurrence/recurrencePattern/RecurrencePatternWeek.groovy (Line 1:1 - Line 13:22), service/grails-app/domain/org/olf/recurrence/recurrencePattern/RecurrencePatternYearDate.groovy (Line 1:1 - Line 13:26)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn22" onclick="toggleCodeBlock('cloneGroup22', 'expandBtn22', 'collapseBtn22')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn22" onclick="toggleCodeBlock('cloneGroup22', 'expandBtn22', 'collapseBtn22')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup22"><code class="language-groovy text-sm text-gray-800">package org.olf.recurrence.recurrencePattern
-
-import org.olf.recurrence.RecurrenceRule
-
-import grails.gorm.MultiTenant
-
-import java.time.LocalDate
-
-import com.k_int.web.toolkit.refdata.CategoryId
-import com.k_int.web.toolkit.refdata.Defaults
-import com.k_int.web.toolkit.refdata.RefdataValue
-
-public class RecurrencePatternWeek</code></pre></div><div class="py-4"><p class="text-gray-600">service/grails-app/domain/org/olf/recurrence/recurrencePattern/RecurrencePatternMonthWeekday.groovy (Line 1:1 - Line 15:30), service/grails-app/domain/org/olf/recurrence/recurrencePattern/RecurrencePatternYearMonthWeekday.groovy (Line 1:1 - Line 15:34)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn23" onclick="toggleCodeBlock('cloneGroup23', 'expandBtn23', 'collapseBtn23')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn23" onclick="toggleCodeBlock('cloneGroup23', 'expandBtn23', 'collapseBtn23')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup23"><code class="language-groovy text-sm text-gray-800">package org.olf.recurrence.recurrencePattern
-
-import org.olf.recurrence.RecurrenceRule
-
-import grails.gorm.MultiTenant
-
-import java.time.LocalDate
-import java.time.temporal.ChronoField;
-
-import com.k_int.web.toolkit.refdata.CategoryId
-import com.k_int.web.toolkit.refdata.Defaults
-import com.k_int.web.toolkit.refdata.RefdataValue
-
-
-public class RecurrencePatternMonthWeekday</code></pre></div><div class="py-4"><p class="text-gray-600">service/grails-app/domain/org/olf/recurrence/recurrencePattern/RecurrencePatternMonthWeekday.groovy (Line 25:3 - Line 34:2), service/grails-app/domain/org/olf/recurrence/recurrencePattern/RecurrencePatternYearMonthWeekday.groovy (Line 30:3 - Line 39:6)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn24" onclick="toggleCodeBlock('cloneGroup24', 'expandBtn24', 'collapseBtn24')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn24" onclick="toggleCodeBlock('cloneGroup24', 'expandBtn24', 'collapseBtn24')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup24"><code class="language-groovy text-sm text-gray-800">}
+}</code></pre></div><div class="py-4"><p class="text-gray-600">service/grails-app/domain/org/olf/recurrence/recurrencePattern/RecurrencePatternMonthWeekday.groovy (Line 25:3 - Line 34:2), service/grails-app/domain/org/olf/recurrence/recurrencePattern/RecurrencePatternYearMonthWeekday.groovy (Line 30:3 - Line 39:6)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn12" onclick="toggleCodeBlock('cloneGroup12', 'expandBtn12', 'collapseBtn12')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn12" onclick="toggleCodeBlock('cloneGroup12', 'expandBtn12', 'collapseBtn12')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup12"><code class="language-groovy text-sm text-gray-800">}
 
   static constraints = {
        week nullable: false, validator: { Integer val, RecurrencePattern obj, errors -&gt; 
@@ -276,7 +125,7 @@ public class RecurrencePatternMonthWeekday</code></pre></div><div class="py-4"><
           }
          }
     weekday nullable: false
-  }</code></pre></div><div class="py-4"><p class="text-gray-600">service/grails-app/domain/org/olf/recurrence/recurrencePattern/RecurrencePatternMonthDate.groovy (Line 15:3 - Line 23:2), service/grails-app/domain/org/olf/recurrence/recurrencePattern/RecurrencePatternYearDate.groovy (Line 23:3 - Line 31:6)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn25" onclick="toggleCodeBlock('cloneGroup25', 'expandBtn25', 'collapseBtn25')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn25" onclick="toggleCodeBlock('cloneGroup25', 'expandBtn25', 'collapseBtn25')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup25"><code class="language-groovy text-sm text-gray-800">}
+  }</code></pre></div><div class="py-4"><p class="text-gray-600">service/grails-app/domain/org/olf/recurrence/recurrencePattern/RecurrencePatternMonthDate.groovy (Line 15:3 - Line 23:2), service/grails-app/domain/org/olf/recurrence/recurrencePattern/RecurrencePatternYearDate.groovy (Line 23:3 - Line 31:6)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn13" onclick="toggleCodeBlock('cloneGroup13', 'expandBtn13', 'collapseBtn13')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn13" onclick="toggleCodeBlock('cloneGroup13', 'expandBtn13', 'collapseBtn13')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup13"><code class="language-groovy text-sm text-gray-800">}
 
   static constraints = {
     day nullable: false, validator: { Integer val, RecurrencePattern obj, errors -&gt; 
@@ -284,132 +133,12 @@ public class RecurrencePatternMonthWeekday</code></pre></div><div class="py-4"><
               errors.rejectValue('day', 'recurrence.pattern.value.not.in.range', ['Day', 1, 31] as Object[], 'Invalid day')
           }
          }
-  }</code></pre></div><div class="py-4"><p class="text-gray-600">service/grails-app/domain/org/olf/omission/omissionPattern/OmissionPatternWeekMonth.groovy (Line 8:1 - Line 15:25), service/grails-app/domain/org/olf/recurrence/recurrencePattern/RecurrencePatternYearWeekday.groovy (Line 7:1 - Line 14:29)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn26" onclick="toggleCodeBlock('cloneGroup26', 'expandBtn26', 'collapseBtn26')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn26" onclick="toggleCodeBlock('cloneGroup26', 'expandBtn26', 'collapseBtn26')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup26"><code class="language-groovy text-sm text-gray-800">import java.time.LocalDate
-import java.time.temporal.ChronoField
-
-import com.k_int.web.toolkit.refdata.CategoryId
-import com.k_int.web.toolkit.refdata.Defaults
-import com.k_int.web.toolkit.refdata.RefdataValue
-
-public class OmissionPatternWeekMonth</code></pre></div><div class="py-4"><p class="text-gray-600">service/grails-app/domain/org/olf/omission/omissionPattern/OmissionPatternMonth.groovy (Line 9:1 - Line 16:21), service/grails-app/domain/org/olf/recurrence/recurrencePattern/RecurrencePatternYearWeekday.groovy (Line 7:1 - Line 14:29)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn27" onclick="toggleCodeBlock('cloneGroup27', 'expandBtn27', 'collapseBtn27')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn27" onclick="toggleCodeBlock('cloneGroup27', 'expandBtn27', 'collapseBtn27')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup27"><code class="language-groovy text-sm text-gray-800">import java.time.LocalDate
-import java.time.temporal.ChronoField
-
-import com.k_int.web.toolkit.refdata.CategoryId
-import com.k_int.web.toolkit.refdata.Defaults
-import com.k_int.web.toolkit.refdata.RefdataValue
-
-public class OmissionPatternMonth</code></pre></div><div class="py-4"><p class="text-gray-600">service/grails-app/domain/org/olf/omission/omissionPattern/OmissionPatternIssueWeekMonth.groovy (Line 8:1 - Line 15:30), service/grails-app/domain/org/olf/recurrence/recurrencePattern/RecurrencePatternYearWeekday.groovy (Line 7:1 - Line 14:29)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn28" onclick="toggleCodeBlock('cloneGroup28', 'expandBtn28', 'collapseBtn28')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn28" onclick="toggleCodeBlock('cloneGroup28', 'expandBtn28', 'collapseBtn28')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup28"><code class="language-groovy text-sm text-gray-800">import java.time.LocalDate
-import java.time.temporal.ChronoField
-
-import com.k_int.web.toolkit.refdata.CategoryId
-import com.k_int.web.toolkit.refdata.Defaults
-import com.k_int.web.toolkit.refdata.RefdataValue
-
-public class OmissionPatternIssueWeekMonth</code></pre></div><div class="py-4"><p class="text-gray-600">service/grails-app/domain/org/olf/omission/omissionPattern/OmissionPatternIssueWeek.groovy (Line 1:1 - Line 15:25), service/grails-app/domain/org/olf/omission/omissionPattern/OmissionPatternIssueWeekMonth.groovy (Line 1:1 - Line 14:29)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn29" onclick="toggleCodeBlock('cloneGroup29', 'expandBtn29', 'collapseBtn29')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn29" onclick="toggleCodeBlock('cloneGroup29', 'expandBtn29', 'collapseBtn29')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup29"><code class="language-groovy text-sm text-gray-800">package org.olf.omission.omissionPattern
-
-import grails.gorm.MultiTenant
-
-import org.olf.omission.OmissionRule
-import org.olf.internalPiece.*
-
-import java.time.LocalDate
-import java.time.temporal.ChronoField
-
-import com.k_int.web.toolkit.refdata.CategoryId
-import com.k_int.web.toolkit.refdata.Defaults
-import com.k_int.web.toolkit.refdata.RefdataValue
-
-public class OmissionPatternIssueWeek</code></pre></div><div class="py-4"><p class="text-gray-600">service/grails-app/domain/org/olf/omission/omissionPattern/OmissionPatternIssueMonth.groovy (Line 1:1 - Line 15:26), service/grails-app/domain/org/olf/omission/omissionPattern/OmissionPatternIssueWeekMonth.groovy (Line 1:1 - Line 14:29)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn30" onclick="toggleCodeBlock('cloneGroup30', 'expandBtn30', 'collapseBtn30')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn30" onclick="toggleCodeBlock('cloneGroup30', 'expandBtn30', 'collapseBtn30')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup30"><code class="language-groovy text-sm text-gray-800">package org.olf.omission.omissionPattern
-
-import grails.gorm.MultiTenant
-
-import org.olf.omission.OmissionRule
-import org.olf.internalPiece.*
-
-import java.time.LocalDate
-import java.time.temporal.ChronoField
-
-import com.k_int.web.toolkit.refdata.CategoryId
-import com.k_int.web.toolkit.refdata.Defaults
-import com.k_int.web.toolkit.refdata.RefdataValue
-
-public class OmissionPatternIssueMonth</code></pre></div><div class="py-4"><p class="text-gray-600">service/grails-app/domain/org/olf/omission/omissionPattern/OmissionPatternDayWeekday.groovy (Line 1:1 - Line 14:26), service/grails-app/domain/org/olf/omission/omissionPattern/OmissionPatternIssue.groovy (Line 1:1 - Line 14:21)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn31" onclick="toggleCodeBlock('cloneGroup31', 'expandBtn31', 'collapseBtn31')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn31" onclick="toggleCodeBlock('cloneGroup31', 'expandBtn31', 'collapseBtn31')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup31"><code class="language-groovy text-sm text-gray-800">package org.olf.omission.omissionPattern
-
-import grails.gorm.MultiTenant
-
-import org.olf.omission.OmissionRule
-import org.olf.internalPiece.InternalPiece
-
-import java.time.LocalDate
-
-import com.k_int.web.toolkit.refdata.CategoryId
-import com.k_int.web.toolkit.refdata.Defaults
-import com.k_int.web.toolkit.refdata.RefdataValue
-
-public class OmissionPatternDayWeekday</code></pre></div><div class="py-4"><p class="text-gray-600">service/grails-app/domain/org/olf/omission/omissionPattern/OmissionPatternDayWeekMonth.groovy (Line 1:1 - Line 15:28), service/grails-app/domain/org/olf/omission/omissionPattern/OmissionPatternWeekMonth.groovy (Line 1:1 - Line 14:29)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn32" onclick="toggleCodeBlock('cloneGroup32', 'expandBtn32', 'collapseBtn32')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn32" onclick="toggleCodeBlock('cloneGroup32', 'expandBtn32', 'collapseBtn32')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup32"><code class="language-groovy text-sm text-gray-800">package org.olf.omission.omissionPattern
-
-import grails.gorm.MultiTenant
-
-import org.olf.omission.OmissionRule
-import org.olf.internalPiece.InternalPiece
-
-import java.time.LocalDate
-import java.time.temporal.ChronoField
-
-import com.k_int.web.toolkit.refdata.CategoryId
-import com.k_int.web.toolkit.refdata.Defaults
-import com.k_int.web.toolkit.refdata.RefdataValue
-
-public class OmissionPatternDayWeekMonth</code></pre></div><div class="py-4"><p class="text-gray-600">service/grails-app/domain/org/olf/omission/omissionPattern/OmissionPatternDayWeekMonth.groovy (Line 41:15 - Line 46:2), service/grails-app/domain/org/olf/recurrence/recurrencePattern/RecurrencePatternYearMonthWeekday.groovy (Line 42:5 - Line 47:2)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn33" onclick="toggleCodeBlock('cloneGroup33', 'expandBtn33', 'collapseBtn33')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn33" onclick="toggleCodeBlock('cloneGroup33', 'expandBtn33', 'collapseBtn33')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup33"><code class="language-groovy text-sm text-gray-800">){
+  }</code></pre></div><div class="py-4"><p class="text-gray-600">service/grails-app/domain/org/olf/omission/omissionPattern/OmissionPatternDayWeekMonth.groovy (Line 41:15 - Line 46:2), service/grails-app/domain/org/olf/recurrence/recurrencePattern/RecurrencePatternYearMonthWeekday.groovy (Line 42:5 - Line 47:2)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn14" onclick="toggleCodeBlock('cloneGroup14', 'expandBtn14', 'collapseBtn14')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn14" onclick="toggleCodeBlock('cloneGroup14', 'expandBtn14', 'collapseBtn14')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup14"><code class="language-groovy text-sm text-gray-800">){
     return (rule?.pattern?.month?.value?.toUpperCase() == date.getMonth().toString() &amp;&amp;
             rule?.pattern?.week == date.get(ChronoField.ALIGNED_WEEK_OF_MONTH) &amp;&amp;
             rule?.pattern?.weekday?.value?.toUpperCase() == date.getDayOfWeek().toString())
   }
-}</code></pre></div><div class="py-4"><p class="text-gray-600">service/grails-app/domain/org/olf/omission/omissionPattern/OmissionPatternDayWeek.groovy (Line 1:1 - Line 15:23), service/grails-app/domain/org/olf/omission/omissionPattern/OmissionPatternWeekMonth.groovy (Line 1:1 - Line 14:29)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn34" onclick="toggleCodeBlock('cloneGroup34', 'expandBtn34', 'collapseBtn34')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn34" onclick="toggleCodeBlock('cloneGroup34', 'expandBtn34', 'collapseBtn34')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup34"><code class="language-groovy text-sm text-gray-800">package org.olf.omission.omissionPattern
-
-import grails.gorm.MultiTenant
-
-import org.olf.omission.OmissionRule
-import org.olf.internalPiece.InternalPiece
-
-import java.time.LocalDate
-import java.time.temporal.ChronoField
-
-import com.k_int.web.toolkit.refdata.CategoryId
-import com.k_int.web.toolkit.refdata.Defaults
-import com.k_int.web.toolkit.refdata.RefdataValue
-
-public class OmissionPatternDayWeek</code></pre></div><div class="py-4"><p class="text-gray-600">service/grails-app/domain/org/olf/omission/omissionPattern/OmissionPatternDayMonth.groovy (Line 1:1 - Line 14:24), service/grails-app/domain/org/olf/omission/omissionPattern/OmissionPatternIssue.groovy (Line 1:1 - Line 14:21)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn35" onclick="toggleCodeBlock('cloneGroup35', 'expandBtn35', 'collapseBtn35')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn35" onclick="toggleCodeBlock('cloneGroup35', 'expandBtn35', 'collapseBtn35')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup35"><code class="language-groovy text-sm text-gray-800">package org.olf.omission.omissionPattern
-
-import grails.gorm.MultiTenant
-
-import org.olf.omission.OmissionRule
-import org.olf.internalPiece.InternalPiece
-
-import java.time.LocalDate
-
-import com.k_int.web.toolkit.refdata.CategoryId
-import com.k_int.web.toolkit.refdata.Defaults
-import com.k_int.web.toolkit.refdata.RefdataValue
-
-public class OmissionPatternDayMonth</code></pre></div><div class="py-4"><p class="text-gray-600">service/grails-app/domain/org/olf/internalPiece/templateMetadata/EnumerationTemplateMetadata.groovy (Line 1:1 - Line 9:28), service/grails-app/domain/org/olf/internalPiece/templateMetadata/EnumerationTemplateMetadataLevel.groovy (Line 1:1 - Line 9:33)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn36" onclick="toggleCodeBlock('cloneGroup36', 'expandBtn36', 'collapseBtn36')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn36" onclick="toggleCodeBlock('cloneGroup36', 'expandBtn36', 'collapseBtn36')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup36"><code class="language-groovy text-sm text-gray-800">package org.olf.internalPiece.templateMetadata
-
-import grails.gorm.MultiTenant
-
-import com.k_int.web.toolkit.refdata.CategoryId
-import com.k_int.web.toolkit.refdata.Defaults
-import com.k_int.web.toolkit.refdata.RefdataValue
-
-public class EnumerationTemplateMetadata</code></pre></div><div class="py-4"><p class="text-gray-600">service/grails-app/domain/org/olf/combination/combinationPattern/CombinationPatternWeekMonth.groovy (Line 6:1 - Line 15:35), service/grails-app/domain/org/olf/recurrence/recurrencePattern/RecurrencePatternYearWeekday.groovy (Line 5:1 - Line 14:7)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn37" onclick="toggleCodeBlock('cloneGroup37', 'expandBtn37', 'collapseBtn37')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn37" onclick="toggleCodeBlock('cloneGroup37', 'expandBtn37', 'collapseBtn37')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup37"><code class="language-groovy text-sm text-gray-800">import grails.gorm.MultiTenant
-
-import java.time.LocalDate
-import java.time.temporal.ChronoField
-
-import com.k_int.web.toolkit.refdata.CategoryId
-import com.k_int.web.toolkit.refdata.Defaults
-import com.k_int.web.toolkit.refdata.RefdataValue
-
-// TODO DECIDE IF WE'RE DOING THIS</code></pre></div><div class="py-4"><p class="text-gray-600">service/grails-app/domain/org/olf/combination/combinationPattern/CombinationPatternWeekMonth.groovy (Line 16:28 - Line 25:12), service/grails-app/domain/org/olf/omission/omissionPattern/OmissionPatternWeekMonth.groovy (Line 15:25 - Line 24:12)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn38" onclick="toggleCodeBlock('cloneGroup38', 'expandBtn38', 'collapseBtn38')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn38" onclick="toggleCodeBlock('cloneGroup38', 'expandBtn38', 'collapseBtn38')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup38"><code class="language-groovy text-sm text-gray-800">&gt; {
+}</code></pre></div><div class="py-4"><p class="text-gray-600">service/grails-app/domain/org/olf/combination/combinationPattern/CombinationPatternWeekMonth.groovy (Line 16:28 - Line 25:12), service/grails-app/domain/org/olf/omission/omissionPattern/OmissionPatternWeekMonth.groovy (Line 15:25 - Line 24:12)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn15" onclick="toggleCodeBlock('cloneGroup15', 'expandBtn15', 'collapseBtn15')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn15" onclick="toggleCodeBlock('cloneGroup15', 'expandBtn15', 'collapseBtn15')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup15"><code class="language-groovy text-sm text-gray-800">&gt; {
 
   Integer week
 
@@ -418,38 +147,7 @@ import com.k_int.web.toolkit.refdata.RefdataValue
   RefdataValue month
 
   static mapping = {
-     week column: 'cpwm_week'</code></pre></div><div class="py-4"><p class="text-gray-600">service/grails-app/domain/org/olf/combination/combinationPattern/CombinationPatternWeek.groovy (Line 1:1 - Line 16:23), service/grails-app/domain/org/olf/combination/combinationPattern/CombinationPatternWeekMonth.groovy (Line 1:1 - Line 16:28)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn39" onclick="toggleCodeBlock('cloneGroup39', 'expandBtn39', 'collapseBtn39')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn39" onclick="toggleCodeBlock('cloneGroup39', 'expandBtn39', 'collapseBtn39')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup39"><code class="language-groovy text-sm text-gray-800">package org.olf.combination.combinationPattern
-
-import org.olf.combination.CombinationRule
-import org.olf.internalPiece.InternalPiece
-
-import grails.gorm.MultiTenant
-
-import java.time.LocalDate
-import java.time.temporal.ChronoField
-
-import com.k_int.web.toolkit.refdata.CategoryId
-import com.k_int.web.toolkit.refdata.Defaults
-import com.k_int.web.toolkit.refdata.RefdataValue
-
-// TODO DECIDE IF WE'RE DOING THIS
-public class CombinationPatternWeek</code></pre></div><div class="py-4"><p class="text-gray-600">service/grails-app/domain/org/olf/combination/combinationPattern/CombinationPatternMonth.groovy (Line 8:1 - Line 17:24), service/grails-app/domain/org/olf/omission/omissionPattern/OmissionPatternMonth.groovy (Line 8:1 - Line 16:28)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn40" onclick="toggleCodeBlock('cloneGroup40', 'expandBtn40', 'collapseBtn40')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn40" onclick="toggleCodeBlock('cloneGroup40', 'expandBtn40', 'collapseBtn40')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup40"><code class="language-groovy text-sm text-gray-800">import java.time.Month
-import java.time.LocalDate
-import java.time.temporal.ChronoField
-
-import com.k_int.web.toolkit.refdata.CategoryId
-import com.k_int.web.toolkit.refdata.Defaults
-import com.k_int.web.toolkit.refdata.RefdataValue
-
-// TODO DECIDE IF WE'RE DOING THIS
-public class CombinationPatternMonth</code></pre></div><div class="py-4"><p class="text-gray-600">service/grails-app/domain/org/olf/combination/combinationPattern/CombinationPatternIssueWeekMonth.groovy (Line 9:1 - Line 16:33), service/grails-app/domain/org/olf/recurrence/recurrencePattern/RecurrencePatternYearWeekday.groovy (Line 7:1 - Line 14:29)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn41" onclick="toggleCodeBlock('cloneGroup41', 'expandBtn41', 'collapseBtn41')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn41" onclick="toggleCodeBlock('cloneGroup41', 'expandBtn41', 'collapseBtn41')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup41"><code class="language-groovy text-sm text-gray-800">import java.time.LocalDate
-import java.time.temporal.ChronoField
-
-import com.k_int.web.toolkit.refdata.CategoryId
-import com.k_int.web.toolkit.refdata.Defaults
-import com.k_int.web.toolkit.refdata.RefdataValue
-
-public class CombinationPatternIssueWeekMonth</code></pre></div><div class="py-4"><p class="text-gray-600">service/grails-app/domain/org/olf/combination/combinationPattern/CombinationPatternIssueWeekMonth.groovy (Line 16:33 - Line 27:14), service/grails-app/domain/org/olf/omission/omissionPattern/OmissionPatternIssueWeekMonth.groovy (Line 15:30 - Line 26:14)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn42" onclick="toggleCodeBlock('cloneGroup42', 'expandBtn42', 'collapseBtn42')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn42" onclick="toggleCodeBlock('cloneGroup42', 'expandBtn42', 'collapseBtn42')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup42"><code class="language-groovy text-sm text-gray-800">&gt; {
+     week column: 'cpwm_week'</code></pre></div><div class="py-4"><p class="text-gray-600">service/grails-app/domain/org/olf/combination/combinationPattern/CombinationPatternIssueWeekMonth.groovy (Line 16:33 - Line 27:14), service/grails-app/domain/org/olf/omission/omissionPattern/OmissionPatternIssueWeekMonth.groovy (Line 15:30 - Line 26:14)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn16" onclick="toggleCodeBlock('cloneGroup16', 'expandBtn16', 'collapseBtn16')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn16" onclick="toggleCodeBlock('cloneGroup16', 'expandBtn16', 'collapseBtn16')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup16"><code class="language-groovy text-sm text-gray-800">&gt; {
 
   Integer issue
 
@@ -460,7 +158,7 @@ public class CombinationPatternIssueWeekMonth</code></pre></div><div class="py-4
   RefdataValue month
 
   static mapping = {
-    issue column: 'cpiwm_issue'</code></pre></div><div class="py-4"><p class="text-gray-600">service/grails-app/domain/org/olf/combination/combinationPattern/CombinationPatternIssueWeekMonth.groovy (Line 38:2 - Line 48:8), service/grails-app/domain/org/olf/omission/omissionPattern/OmissionPatternIssueWeekMonth.groovy (Line 38:2 - Line 48:7)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn43" onclick="toggleCodeBlock('cloneGroup43', 'expandBtn43', 'collapseBtn43')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn43" onclick="toggleCodeBlock('cloneGroup43', 'expandBtn43', 'collapseBtn43')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup43"><code class="language-groovy text-sm text-gray-800">rule, LocalDate date, ArrayList&lt;InternalPiece&gt; internalPieces){
+    issue column: 'cpiwm_issue'</code></pre></div><div class="py-4"><p class="text-gray-600">service/grails-app/domain/org/olf/combination/combinationPattern/CombinationPatternIssueWeekMonth.groovy (Line 38:2 - Line 48:8), service/grails-app/domain/org/olf/omission/omissionPattern/OmissionPatternIssueWeekMonth.groovy (Line 38:2 - Line 48:7)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn17" onclick="toggleCodeBlock('cloneGroup17', 'expandBtn17', 'collapseBtn17')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn17" onclick="toggleCodeBlock('cloneGroup17', 'expandBtn17', 'collapseBtn17')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup17"><code class="language-groovy text-sm text-gray-800">rule, LocalDate date, ArrayList&lt;InternalPiece&gt; internalPieces){
     ArrayList&lt;InternalPiece&gt; weekMonthGroup = InternalPiece.conditionalGroupRecurrencePieces(internalPieces){ip -&gt;
       return ip.date.getMonth().toString() == rule.pattern.month.value.toUpperCase() &amp;&amp;
       ip.date.get(ChronoField.ALIGNED_WEEK_OF_MONTH) == rule.pattern.week &amp;&amp; 
@@ -470,7 +168,7 @@ public class CombinationPatternIssueWeekMonth</code></pre></div><div class="py-4
       return false
     }
 
-    Integer</code></pre></div><div class="py-4"><p class="text-gray-600">service/grails-app/domain/org/olf/combination/combinationPattern/CombinationPatternIssueWeek.groovy (Line 32:2 - Line 41:8), service/grails-app/domain/org/olf/omission/omissionPattern/OmissionPatternIssueWeek.groovy (Line 32:2 - Line 40:7)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn44" onclick="toggleCodeBlock('cloneGroup44', 'expandBtn44', 'collapseBtn44')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn44" onclick="toggleCodeBlock('cloneGroup44', 'expandBtn44', 'collapseBtn44')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup44"><code class="language-groovy text-sm text-gray-800">rule, LocalDate date, ArrayList&lt;InternalPiece&gt; internalPieces){
+    Integer</code></pre></div><div class="py-4"><p class="text-gray-600">service/grails-app/domain/org/olf/combination/combinationPattern/CombinationPatternIssueWeek.groovy (Line 32:2 - Line 41:8), service/grails-app/domain/org/olf/omission/omissionPattern/OmissionPatternIssueWeek.groovy (Line 32:2 - Line 40:7)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn18" onclick="toggleCodeBlock('cloneGroup18', 'expandBtn18', 'collapseBtn18')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn18" onclick="toggleCodeBlock('cloneGroup18', 'expandBtn18', 'collapseBtn18')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup18"><code class="language-groovy text-sm text-gray-800">rule, LocalDate date, ArrayList&lt;InternalPiece&gt; internalPieces){
     ArrayList&lt;InternalPiece&gt; weekGroup = InternalPiece.conditionalGroupRecurrencePieces(internalPieces){ip -&gt;
       return ip.date.get(ChronoField.ALIGNED_WEEK_OF_YEAR) == rule.pattern.week &amp;&amp; 
       ip.date.get(ChronoField.YEAR) == date.get(ChronoField.YEAR)
@@ -479,27 +177,12 @@ public class CombinationPatternIssueWeekMonth</code></pre></div><div class="py-4
       return false
     }
 
-    Integer</code></pre></div><div class="py-4"><p class="text-gray-600">service/grails-app/domain/org/olf/combination/combinationPattern/CombinationPatternIssueWeek.groovy (Line 41:10 - Line 46:2), service/grails-app/domain/org/olf/combination/combinationPattern/CombinationPatternIssueWeekMonth.groovy (Line 48:15 - Line 53:2)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn45" onclick="toggleCodeBlock('cloneGroup45', 'expandBtn45', 'collapseBtn45')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn45" onclick="toggleCodeBlock('cloneGroup45', 'expandBtn45', 'collapseBtn45')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup45"><code class="language-groovy text-sm text-gray-800">.sort{a,b -&gt; a.date &lt;=&gt; b.date}[rule?.pattern?.issue - 1].date)
+    Integer</code></pre></div><div class="py-4"><p class="text-gray-600">service/grails-app/domain/org/olf/combination/combinationPattern/CombinationPatternIssueWeek.groovy (Line 41:10 - Line 46:2), service/grails-app/domain/org/olf/combination/combinationPattern/CombinationPatternIssueWeekMonth.groovy (Line 48:15 - Line 53:2)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn19" onclick="toggleCodeBlock('cloneGroup19', 'expandBtn19', 'collapseBtn19')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn19" onclick="toggleCodeBlock('cloneGroup19', 'expandBtn19', 'collapseBtn19')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup19"><code class="language-groovy text-sm text-gray-800">.sort{a,b -&gt; a.date &lt;=&gt; b.date}[rule?.pattern?.issue - 1].date)
     Integer index = InternalPiece.findIndexFromDate(internalPieces, date)
     Integer endIndex = startIndex + rule?.issuesToCombine - 1
     return index &gt;= startIndex  &amp;&amp; index &lt;= endIndex
   }
-}</code></pre></div><div class="py-4"><p class="text-gray-600">service/grails-app/domain/org/olf/combination/combinationPattern/CombinationPatternIssueMonth.groovy (Line 1:1 - Line 16:29), service/grails-app/domain/org/olf/combination/combinationPattern/CombinationPatternIssueWeek.groovy (Line 1:1 - Line 16:28)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn46" onclick="toggleCodeBlock('cloneGroup46', 'expandBtn46', 'collapseBtn46')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn46" onclick="toggleCodeBlock('cloneGroup46', 'expandBtn46', 'collapseBtn46')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup46"><code class="language-groovy text-sm text-gray-800">package org.olf.combination.combinationPattern
-
-import org.olf.combination.CombinationRule
-import org.olf.internalPiece.InternalPiece
-import org.olf.internalPiece.InternalRecurrencePiece
-
-import java.time.LocalDate
-import java.time.temporal.ChronoField
-
-import grails.gorm.MultiTenant
-
-import com.k_int.web.toolkit.refdata.CategoryId
-import com.k_int.web.toolkit.refdata.Defaults
-import com.k_int.web.toolkit.refdata.RefdataValue
-
-public class CombinationPatternIssueMonth</code></pre></div><div class="py-4"><p class="text-gray-600">service/grails-app/domain/org/olf/combination/combinationPattern/CombinationPatternIssueMonth.groovy (Line 16:29 - Line 25:13), service/grails-app/domain/org/olf/omission/omissionPattern/OmissionPatternIssueMonth.groovy (Line 15:26 - Line 24:13)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn47" onclick="toggleCodeBlock('cloneGroup47', 'expandBtn47', 'collapseBtn47')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn47" onclick="toggleCodeBlock('cloneGroup47', 'expandBtn47', 'collapseBtn47')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup47"><code class="language-groovy text-sm text-gray-800">&gt; {
+}</code></pre></div><div class="py-4"><p class="text-gray-600">service/grails-app/domain/org/olf/combination/combinationPattern/CombinationPatternIssueMonth.groovy (Line 16:29 - Line 25:13), service/grails-app/domain/org/olf/omission/omissionPattern/OmissionPatternIssueMonth.groovy (Line 15:26 - Line 24:13)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn20" onclick="toggleCodeBlock('cloneGroup20', 'expandBtn20', 'collapseBtn20')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn20" onclick="toggleCodeBlock('cloneGroup20', 'expandBtn20', 'collapseBtn20')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup20"><code class="language-groovy text-sm text-gray-800">&gt; {
 
   Integer issue
 
@@ -508,7 +191,7 @@ public class CombinationPatternIssueMonth</code></pre></div><div class="py-4"><p
   RefdataValue month
 
   static mapping = {
-    issue column: 'cpim_issue'</code></pre></div><div class="py-4"><p class="text-gray-600">service/grails-app/domain/org/olf/combination/combinationPattern/CombinationPatternIssueMonth.groovy (Line 34:2 - Line 43:8), service/grails-app/domain/org/olf/omission/omissionPattern/OmissionPatternIssueMonth.groovy (Line 34:2 - Line 42:7)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn48" onclick="toggleCodeBlock('cloneGroup48', 'expandBtn48', 'collapseBtn48')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn48" onclick="toggleCodeBlock('cloneGroup48', 'expandBtn48', 'collapseBtn48')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup48"><code class="language-groovy text-sm text-gray-800">rule, LocalDate date, ArrayList&lt;InternalPiece&gt; internalPieces){
+    issue column: 'cpim_issue'</code></pre></div><div class="py-4"><p class="text-gray-600">service/grails-app/domain/org/olf/combination/combinationPattern/CombinationPatternIssueMonth.groovy (Line 34:2 - Line 43:8), service/grails-app/domain/org/olf/omission/omissionPattern/OmissionPatternIssueMonth.groovy (Line 34:2 - Line 42:7)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn21" onclick="toggleCodeBlock('cloneGroup21', 'expandBtn21', 'collapseBtn21')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn21" onclick="toggleCodeBlock('cloneGroup21', 'expandBtn21', 'collapseBtn21')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup21"><code class="language-groovy text-sm text-gray-800">rule, LocalDate date, ArrayList&lt;InternalPiece&gt; internalPieces){
     ArrayList&lt;InternalPiece&gt; monthGroup = InternalPiece.conditionalGroupRecurrencePieces(internalPieces){ip -&gt;
       return ip.date.getMonth().toString() == rule.pattern.month.value.toUpperCase() &amp;&amp; 
       ip.date.get(ChronoField.YEAR) == date.get(ChronoField.YEAR)
@@ -517,48 +200,12 @@ public class CombinationPatternIssueMonth</code></pre></div><div class="py-4"><p
       return false
     }
 
-    Integer</code></pre></div><div class="py-4"><p class="text-gray-600">service/grails-app/domain/org/olf/combination/combinationPattern/CombinationPatternIssueMonth.groovy (Line 43:11 - Line 48:2), service/grails-app/domain/org/olf/combination/combinationPattern/CombinationPatternIssueWeekMonth.groovy (Line 48:15 - Line 53:2)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn49" onclick="toggleCodeBlock('cloneGroup49', 'expandBtn49', 'collapseBtn49')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn49" onclick="toggleCodeBlock('cloneGroup49', 'expandBtn49', 'collapseBtn49')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup49"><code class="language-groovy text-sm text-gray-800">.sort{a,b -&gt; a.date &lt;=&gt; b.date}[rule?.pattern?.issue - 1].date)
+    Integer</code></pre></div><div class="py-4"><p class="text-gray-600">service/grails-app/domain/org/olf/combination/combinationPattern/CombinationPatternIssueMonth.groovy (Line 43:11 - Line 48:2), service/grails-app/domain/org/olf/combination/combinationPattern/CombinationPatternIssueWeekMonth.groovy (Line 48:15 - Line 53:2)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn22" onclick="toggleCodeBlock('cloneGroup22', 'expandBtn22', 'collapseBtn22')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn22" onclick="toggleCodeBlock('cloneGroup22', 'expandBtn22', 'collapseBtn22')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup22"><code class="language-groovy text-sm text-gray-800">.sort{a,b -&gt; a.date &lt;=&gt; b.date}[rule?.pattern?.issue - 1].date)
     Integer index = InternalPiece.findIndexFromDate(internalPieces, date)
     Integer endIndex = startIndex + rule?.issuesToCombine - 1
     return index &gt;= startIndex  &amp;&amp; index &lt;= endIndex
   }
-}</code></pre></div><div class="py-4"><p class="text-gray-600">service/grails-app/domain/org/olf/combination/combinationPattern/CombinationPatternIssue.groovy (Line 6:1 - Line 14:24), service/grails-app/domain/org/olf/recurrence/recurrencePattern/RecurrencePatternYearDate.groovy (Line 5:1 - Line 13:26)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn50" onclick="toggleCodeBlock('cloneGroup50', 'expandBtn50', 'collapseBtn50')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn50" onclick="toggleCodeBlock('cloneGroup50', 'expandBtn50', 'collapseBtn50')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup50"><code class="language-groovy text-sm text-gray-800">import grails.gorm.MultiTenant
-
-import java.time.LocalDate
-
-import com.k_int.web.toolkit.refdata.CategoryId
-import com.k_int.web.toolkit.refdata.Defaults
-import com.k_int.web.toolkit.refdata.RefdataValue
-
-public class CombinationPatternIssue</code></pre></div><div class="py-4"><p class="text-gray-600">service/grails-app/domain/org/olf/combination/combinationPattern/CombinationPatternDayWeekday.groovy (Line 1:1 - Line 14:35), service/grails-app/domain/org/olf/combination/combinationPattern/CombinationPatternIssue.groovy (Line 1:1 - Line 14:7)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn51" onclick="toggleCodeBlock('cloneGroup51', 'expandBtn51', 'collapseBtn51')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn51" onclick="toggleCodeBlock('cloneGroup51', 'expandBtn51', 'collapseBtn51')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup51"><code class="language-groovy text-sm text-gray-800">package org.olf.combination.combinationPattern
-
-import org.olf.combination.CombinationRule
-import org.olf.internalPiece.InternalPiece
-
-import grails.gorm.MultiTenant
-
-import java.time.LocalDate
-
-import com.k_int.web.toolkit.refdata.CategoryId
-import com.k_int.web.toolkit.refdata.Defaults
-import com.k_int.web.toolkit.refdata.RefdataValue
-
-// TODO DECIDE IF WE'RE DOING THIS</code></pre></div><div class="py-4"><p class="text-gray-600">service/grails-app/domain/org/olf/combination/combinationPattern/CombinationPatternDayWeekMonth.groovy (Line 1:1 - Line 16:31), service/grails-app/domain/org/olf/combination/combinationPattern/CombinationPatternWeekMonth.groovy (Line 1:1 - Line 16:28)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn52" onclick="toggleCodeBlock('cloneGroup52', 'expandBtn52', 'collapseBtn52')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn52" onclick="toggleCodeBlock('cloneGroup52', 'expandBtn52', 'collapseBtn52')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup52"><code class="language-groovy text-sm text-gray-800">package org.olf.combination.combinationPattern
-
-import org.olf.combination.CombinationRule
-import org.olf.internalPiece.InternalPiece
-
-import grails.gorm.MultiTenant
-
-import java.time.LocalDate
-import java.time.temporal.ChronoField
-
-import com.k_int.web.toolkit.refdata.CategoryId
-import com.k_int.web.toolkit.refdata.Defaults
-import com.k_int.web.toolkit.refdata.RefdataValue
-
-// TODO DECIDE IF WE'RE DOING THIS
-public class CombinationPatternDayWeekMonth</code></pre></div><div class="py-4"><p class="text-gray-600">service/grails-app/domain/org/olf/combination/combinationPattern/CombinationPatternDayWeekMonth.groovy (Line 16:31 - Line 29:19), service/grails-app/domain/org/olf/omission/omissionPattern/OmissionPatternDayWeekMonth.groovy (Line 15:28 - Line 28:19)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn53" onclick="toggleCodeBlock('cloneGroup53', 'expandBtn53', 'collapseBtn53')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn53" onclick="toggleCodeBlock('cloneGroup53', 'expandBtn53', 'collapseBtn53')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup53"><code class="language-groovy text-sm text-gray-800">&gt; {
+}</code></pre></div><div class="py-4"><p class="text-gray-600">service/grails-app/domain/org/olf/combination/combinationPattern/CombinationPatternDayWeekMonth.groovy (Line 16:31 - Line 29:19), service/grails-app/domain/org/olf/omission/omissionPattern/OmissionPatternDayWeekMonth.groovy (Line 15:28 - Line 28:19)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn23" onclick="toggleCodeBlock('cloneGroup23', 'expandBtn23', 'collapseBtn23')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn23" onclick="toggleCodeBlock('cloneGroup23', 'expandBtn23', 'collapseBtn23')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup23"><code class="language-groovy text-sm text-gray-800">&gt; {
 
   @CategoryId(value=&quot;Global.Weekday&quot;, defaultInternal=true)
   @Defaults(['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'])
@@ -571,41 +218,12 @@ public class CombinationPatternDayWeekMonth</code></pre></div><div class="py-4">
   RefdataValue month
 
   static mapping = {
-    weekday column: 'cpdwm_weekday_fk'</code></pre></div><div class="py-4"><p class="text-gray-600">service/grails-app/domain/org/olf/combination/combinationPattern/CombinationPatternDayWeekMonth.groovy (Line 42:3 - Line 47:2), service/grails-app/domain/org/olf/combination/combinationPattern/CombinationPatternWeekMonth.groovy (Line 35:3 - Line 47:2)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn54" onclick="toggleCodeBlock('cloneGroup54', 'expandBtn54', 'collapseBtn54')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn54" onclick="toggleCodeBlock('cloneGroup54', 'expandBtn54', 'collapseBtn54')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup54"><code class="language-groovy text-sm text-gray-800">public static boolean compareDate(CombinationRule rule, LocalDate date, ArrayList&lt;InternalPiece&gt; internalPieces){
+    weekday column: 'cpdwm_weekday_fk'</code></pre></div><div class="py-4"><p class="text-gray-600">service/grails-app/domain/org/olf/combination/combinationPattern/CombinationPatternDayWeekMonth.groovy (Line 42:3 - Line 47:2), service/grails-app/domain/org/olf/combination/combinationPattern/CombinationPatternWeekMonth.groovy (Line 35:3 - Line 47:2)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn24" onclick="toggleCodeBlock('cloneGroup24', 'expandBtn24', 'collapseBtn24')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn24" onclick="toggleCodeBlock('cloneGroup24', 'expandBtn24', 'collapseBtn24')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup24"><code class="language-groovy text-sm text-gray-800">public static boolean compareDate(CombinationRule rule, LocalDate date, ArrayList&lt;InternalPiece&gt; internalPieces){
     return (rule?.pattern?.month?.value?.toUpperCase() == date.getMonth().toString() &amp;&amp;
             rule?.pattern?.week == date.get(ChronoField.ALIGNED_WEEK_OF_MONTH) &amp;&amp;
             rule?.pattern?.weekday?.value?.toUpperCase() == date.getDayOfWeek().toString())
   }
-}</code></pre></div><div class="py-4"><p class="text-gray-600">service/grails-app/domain/org/olf/combination/combinationPattern/CombinationPatternDayWeek.groovy (Line 1:1 - Line 16:26), service/grails-app/domain/org/olf/combination/combinationPattern/CombinationPatternWeekMonth.groovy (Line 1:1 - Line 16:28)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn55" onclick="toggleCodeBlock('cloneGroup55', 'expandBtn55', 'collapseBtn55')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn55" onclick="toggleCodeBlock('cloneGroup55', 'expandBtn55', 'collapseBtn55')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup55"><code class="language-groovy text-sm text-gray-800">package org.olf.combination.combinationPattern
-
-import org.olf.combination.CombinationRule
-import org.olf.internalPiece.InternalPiece
-
-import grails.gorm.MultiTenant
-
-import java.time.LocalDate
-import java.time.temporal.ChronoField
-
-import com.k_int.web.toolkit.refdata.CategoryId
-import com.k_int.web.toolkit.refdata.Defaults
-import com.k_int.web.toolkit.refdata.RefdataValue
-
-// TODO DECIDE IF WE'RE DOING THIS
-public class CombinationPatternDayWeek</code></pre></div><div class="py-4"><p class="text-gray-600">service/grails-app/domain/org/olf/combination/combinationPattern/CombinationPatternDayMonth.groovy (Line 1:1 - Line 15:27), service/grails-app/domain/org/olf/combination/combinationPattern/CombinationPatternIssue.groovy (Line 1:1 - Line 15:29)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn56" onclick="toggleCodeBlock('cloneGroup56', 'expandBtn56', 'collapseBtn56')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn56" onclick="toggleCodeBlock('cloneGroup56', 'expandBtn56', 'collapseBtn56')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup56"><code class="language-groovy text-sm text-gray-800">package org.olf.combination.combinationPattern
-
-import org.olf.combination.CombinationRule
-import org.olf.internalPiece.InternalPiece
-
-import grails.gorm.MultiTenant
-
-import java.time.LocalDate
-
-import com.k_int.web.toolkit.refdata.CategoryId
-import com.k_int.web.toolkit.refdata.Defaults
-import com.k_int.web.toolkit.refdata.RefdataValue
-
-// TODO DECIDE IF WE'RE DOING THIS
-public class CombinationPatternDayMonth</code></pre></div><div class="py-4"><p class="text-gray-600">service/grails-app/domain/org/olf/combination/combinationPattern/CombinationPatternDayMonth.groovy (Line 15:27 - Line 24:11), service/grails-app/domain/org/olf/omission/omissionPattern/OmissionPatternDayMonth.groovy (Line 14:24 - Line 23:11)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn57" onclick="toggleCodeBlock('cloneGroup57', 'expandBtn57', 'collapseBtn57')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn57" onclick="toggleCodeBlock('cloneGroup57', 'expandBtn57', 'collapseBtn57')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup57"><code class="language-groovy text-sm text-gray-800">&gt; {
+}</code></pre></div><div class="py-4"><p class="text-gray-600">service/grails-app/domain/org/olf/combination/combinationPattern/CombinationPatternDayMonth.groovy (Line 15:27 - Line 24:11), service/grails-app/domain/org/olf/omission/omissionPattern/OmissionPatternDayMonth.groovy (Line 14:24 - Line 23:11)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn25" onclick="toggleCodeBlock('cloneGroup25', 'expandBtn25', 'collapseBtn25')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn25" onclick="toggleCodeBlock('cloneGroup25', 'expandBtn25', 'collapseBtn25')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup25"><code class="language-groovy text-sm text-gray-800">&gt; {
 
   Integer day
 
@@ -614,146 +232,12 @@ public class CombinationPatternDayMonth</code></pre></div><div class="py-4"><p c
   RefdataValue month
 
   static mapping = {
-      day column: 'cpdm_day'</code></pre></div><div class="py-4"><p class="text-gray-600">service/grails-app/domain/org/olf/combination/combinationPattern/CombinationPatternDay.groovy (Line 1:1 - Line 15:22), service/grails-app/domain/org/olf/combination/combinationPattern/CombinationPatternIssue.groovy (Line 1:1 - Line 15:29)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn58" onclick="toggleCodeBlock('cloneGroup58', 'expandBtn58', 'collapseBtn58')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn58" onclick="toggleCodeBlock('cloneGroup58', 'expandBtn58', 'collapseBtn58')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup58"><code class="language-groovy text-sm text-gray-800">package org.olf.combination.combinationPattern
-
-import org.olf.combination.CombinationRule
-import org.olf.internalPiece.InternalPiece
-
-import grails.gorm.MultiTenant
-
-import java.time.LocalDate
-
-import com.k_int.web.toolkit.refdata.CategoryId
-import com.k_int.web.toolkit.refdata.Defaults
-import com.k_int.web.toolkit.refdata.RefdataValue
-
-// TODO DECIDE IF WE'RE DOING THIS
-public class CombinationPatternDay</code></pre></div><div class="py-4"><p class="text-gray-600">service/src/integration-test/groovy/org/olf/PredictedPieceSetLifecycleSpec.groovy (Line 1:1 - Line 21:4), service/src/integration-test/groovy/org/olf/SerialLifecycleSpec.groovy (Line 1:1 - Line 20:6)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn59" onclick="toggleCodeBlock('cloneGroup59', 'expandBtn59', 'collapseBtn59')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn59" onclick="toggleCodeBlock('cloneGroup59', 'expandBtn59', 'collapseBtn59')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup59"><code class="language-groovy text-sm text-gray-800">package org.olf
-
-import static groovyx.net.http.ContentTypes.*
-import static groovyx.net.http.HttpBuilder.configure
-import static org.springframework.http.HttpStatus.*
-
-import com.k_int.okapi.OkapiHeaders
-import com.k_int.okapi.OkapiTenantResolver
-import geb.spock.GebSpec
-import grails.gorm.multitenancy.Tenants
-import grails.testing.mixin.integration.Integration
-import groovy.json.JsonSlurper
-import groovyx.net.http.ChainedHttpConfig
-import groovyx.net.http.FromServer
-import groovyx.net.http.HttpBuilder
-import groovyx.net.http.HttpVerb
-import java.time.LocalDate
-import spock.lang.Stepwise
-import spock.lang.Unroll
-
-import org</code></pre></div><div class="py-4"><p class="text-gray-600">service/grails-app/domain/org/olf/recurrence/RecurrenceRule.groovy (Line 6:1 - Line 14:7), service/grails-app/domain/org/olf/templateConfig/templateMetadataRule/TemplateMetadataRule.groovy (Line 5:1 - Line 13:7)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn60" onclick="toggleCodeBlock('cloneGroup60', 'expandBtn60', 'collapseBtn60')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn60" onclick="toggleCodeBlock('cloneGroup60', 'expandBtn60', 'collapseBtn60')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup60"><code class="language-groovy text-sm text-gray-800">import grails.gorm.MultiTenant
-import grails.databinding.BindUsing
-import grails.databinding.SimpleMapDataBindingSource
-
-import com.k_int.web.toolkit.refdata.CategoryId
-import com.k_int.web.toolkit.refdata.Defaults
-import com.k_int.web.toolkit.refdata.RefdataValue
-
-import</code></pre></div><div class="py-4"><p class="text-gray-600">service/grails-app/domain/org/olf/recurrence/Recurrence.groovy (Line 3:1 - Line 11:11), service/grails-app/domain/org/olf/templateConfig/TemplateConfig.groovy (Line 4:1 - Line 12:15)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn61" onclick="toggleCodeBlock('cloneGroup61', 'expandBtn61', 'collapseBtn61')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn61" onclick="toggleCodeBlock('cloneGroup61', 'expandBtn61', 'collapseBtn61')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup61"><code class="language-groovy text-sm text-gray-800">import org.olf.SerialRuleset
-
-import grails.gorm.MultiTenant
-
-import com.k_int.web.toolkit.refdata.CategoryId
-import com.k_int.web.toolkit.refdata.Defaults
-import com.k_int.web.toolkit.refdata.RefdataValue
-
-public class Recurrence</code></pre></div><div class="py-4"><p class="text-gray-600">service/grails-app/domain/org/olf/omission/OmissionRule.groovy (Line 3:16 - Line 13:13), service/grails-app/domain/org/olf/recurrence/RecurrenceRule.groovy (Line 4:18 - Line 13:21)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn62" onclick="toggleCodeBlock('cloneGroup62', 'expandBtn62', 'collapseBtn62')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn62" onclick="toggleCodeBlock('cloneGroup62', 'expandBtn62', 'collapseBtn62')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup62"><code class="language-groovy text-sm text-gray-800">.*
-
-import grails.gorm.MultiTenant
-import grails.databinding.BindUsing
-import grails.databinding.SimpleMapDataBindingSource
-
-import com.k_int.web.toolkit.refdata.CategoryId
-import com.k_int.web.toolkit.refdata.Defaults
-import com.k_int.web.toolkit.refdata.RefdataValue
-
-public class OmissionRule</code></pre></div><div class="py-4"><p class="text-gray-600">service/grails-app/domain/org/olf/omission/Omission.groovy (Line 4:1 - Line 12:9), service/grails-app/domain/org/olf/templateConfig/TemplateConfig.groovy (Line 4:1 - Line 12:15)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn63" onclick="toggleCodeBlock('cloneGroup63', 'expandBtn63', 'collapseBtn63')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn63" onclick="toggleCodeBlock('cloneGroup63', 'expandBtn63', 'collapseBtn63')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup63"><code class="language-groovy text-sm text-gray-800">import org.olf.SerialRuleset
-
-import grails.gorm.MultiTenant
-
-import com.k_int.web.toolkit.refdata.CategoryId
-import com.k_int.web.toolkit.refdata.Defaults
-import com.k_int.web.toolkit.refdata.RefdataValue
-
-public class Omission</code></pre></div><div class="py-4"><p class="text-gray-600">service/grails-app/domain/org/olf/internalPiece/InternalRecurrencePiece.groovy (Line 6:1 - Line 14:24), service/grails-app/domain/org/olf/recurrence/recurrencePattern/RecurrencePatternYearDate.groovy (Line 5:1 - Line 13:26)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn64" onclick="toggleCodeBlock('cloneGroup64', 'expandBtn64', 'collapseBtn64')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn64" onclick="toggleCodeBlock('cloneGroup64', 'expandBtn64', 'collapseBtn64')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup64"><code class="language-groovy text-sm text-gray-800">import grails.gorm.MultiTenant
-
-import java.time.LocalDate
-
-import com.k_int.web.toolkit.refdata.CategoryId
-import com.k_int.web.toolkit.refdata.Defaults
-import com.k_int.web.toolkit.refdata.RefdataValue
-
-public class InternalRecurrencePiece</code></pre></div><div class="py-4"><p class="text-gray-600">service/grails-app/domain/org/olf/internalPiece/InternalOmissionPiece.groovy (Line 5:1 - Line 13:22), service/grails-app/domain/org/olf/recurrence/recurrencePattern/RecurrencePatternYearDate.groovy (Line 5:1 - Line 13:26)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn65" onclick="toggleCodeBlock('cloneGroup65', 'expandBtn65', 'collapseBtn65')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn65" onclick="toggleCodeBlock('cloneGroup65', 'expandBtn65', 'collapseBtn65')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup65"><code class="language-groovy text-sm text-gray-800">import grails.gorm.MultiTenant
-
-import java.time.LocalDate
-
-import com.k_int.web.toolkit.refdata.CategoryId
-import com.k_int.web.toolkit.refdata.Defaults
-import com.k_int.web.toolkit.refdata.RefdataValue
-
-public class InternalOmissionPiece</code></pre></div><div class="py-4"><p class="text-gray-600">service/grails-app/domain/org/olf/internalPiece/InternalCombinationPiece.groovy (Line 1:1 - Line 13:25), service/grails-app/domain/org/olf/internalPiece/InternalOmissionPiece.groovy (Line 1:1 - Line 13:26)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn66" onclick="toggleCodeBlock('cloneGroup66', 'expandBtn66', 'collapseBtn66')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn66" onclick="toggleCodeBlock('cloneGroup66', 'expandBtn66', 'collapseBtn66')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup66"><code class="language-groovy text-sm text-gray-800">package org.olf.internalPiece
-
-import org.olf.PredictedPieceSet
-
-import grails.gorm.MultiTenant
-
-import java.time.LocalDate
-
-import com.k_int.web.toolkit.refdata.CategoryId
-import com.k_int.web.toolkit.refdata.Defaults
-import com.k_int.web.toolkit.refdata.RefdataValue
-
-public class InternalCombinationPiece</code></pre></div><div class="py-4"><p class="text-gray-600">service/grails-app/domain/org/olf/combination/CombinationRule.groovy (Line 3:19 - Line 13:16), service/grails-app/domain/org/olf/recurrence/RecurrenceRule.groovy (Line 4:18 - Line 13:21)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn67" onclick="toggleCodeBlock('cloneGroup67', 'expandBtn67', 'collapseBtn67')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn67" onclick="toggleCodeBlock('cloneGroup67', 'expandBtn67', 'collapseBtn67')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup67"><code class="language-groovy text-sm text-gray-800">.*
-
-import grails.gorm.MultiTenant
-import grails.databinding.BindUsing
-import grails.databinding.SimpleMapDataBindingSource
-
-import com.k_int.web.toolkit.refdata.CategoryId
-import com.k_int.web.toolkit.refdata.Defaults
-import com.k_int.web.toolkit.refdata.RefdataValue
-
-public class CombinationRule</code></pre></div><div class="py-4"><p class="text-gray-600">service/grails-app/domain/org/olf/combination/Combination.groovy (Line 4:1 - Line 12:12), service/grails-app/domain/org/olf/templateConfig/TemplateConfig.groovy (Line 4:1 - Line 12:15)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn68" onclick="toggleCodeBlock('cloneGroup68', 'expandBtn68', 'collapseBtn68')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn68" onclick="toggleCodeBlock('cloneGroup68', 'expandBtn68', 'collapseBtn68')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup68"><code class="language-groovy text-sm text-gray-800">import org.olf.SerialRuleset
-
-import grails.gorm.MultiTenant
-
-import com.k_int.web.toolkit.refdata.CategoryId
-import com.k_int.web.toolkit.refdata.Defaults
-import com.k_int.web.toolkit.refdata.RefdataValue
-
-public class Combination</code></pre></div><div class="py-4"><p class="text-gray-600">service/grails-app/services/org/olf/PieceLabellingService.groovy (Line 158:2 - Line 163:14), service/grails-app/services/org/olf/PieceLabellingService.groovy (Line 143:2 - Line 148:13)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn69" onclick="toggleCodeBlock('cloneGroup69', 'expandBtn69', 'collapseBtn69')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn69" onclick="toggleCodeBlock('cloneGroup69', 'expandBtn69', 'collapseBtn69')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup69"><code class="language-groovy text-sm text-gray-800">= []
+      day column: 'cpdm_day'</code></pre></div><div class="py-4"><p class="text-gray-600">service/grails-app/services/org/olf/PieceLabellingService.groovy (Line 158:2 - Line 163:14), service/grails-app/services/org/olf/PieceLabellingService.groovy (Line 143:2 - Line 148:13)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn26" onclick="toggleCodeBlock('cloneGroup26', 'expandBtn26', 'collapseBtn26')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn26" onclick="toggleCodeBlock('cloneGroup26', 'expandBtn26', 'collapseBtn26')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup26"><code class="language-groovy text-sm text-gray-800">= []
     Iterator&lt;TemplateMetadataRule&gt; iterator = templateMetadataRules?.iterator()
     while(iterator?.hasNext()){
       TemplateMetadataRule currentMetadataRule = iterator.next()
       String templateMetadataType = RGX_METADATA_RULE_TYPE.matcher(currentMetadataRule?.templateMetadataRuleType?.value).replaceAll { match -&gt; match.group(1).toUpperCase() }
-      if(templateMetadataType == 'enumeration'</code></pre></div><div class="py-4"><p class="text-gray-600">service/grails-app/domain/org/olf/Serial.groovy (Line 5:1 - Line 17:7), service/grails-app/domain/org/olf/SerialRuleset.groovy (Line 8:1 - Line 20:14)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn70" onclick="toggleCodeBlock('cloneGroup70', 'expandBtn70', 'collapseBtn70')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn70" onclick="toggleCodeBlock('cloneGroup70', 'expandBtn70', 'collapseBtn70')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup70"><code class="language-groovy text-sm text-gray-800">import grails.compiler.GrailsCompileStatic
-import grails.gorm.MultiTenant
-import org.hibernate.Session
-import org.hibernate.internal.SessionImpl
-import com.k_int.web.toolkit.refdata.CategoryId
-import com.k_int.web.toolkit.refdata.Defaults
-import com.k_int.web.toolkit.refdata.RefdataValue
-
-import groovy.sql.Sql
-
-
-@GrailsCompileStatic
-class Serial</code></pre></div><div class="py-4"><p class="text-gray-600">service/grails-app/domain/org/olf/PredictedPieceSet.groovy (Line 7:1 - Line 15:6), service/grails-app/domain/org/olf/SerialRuleset.groovy (Line 8:1 - Line 16:7)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn71" onclick="toggleCodeBlock('cloneGroup71', 'expandBtn71', 'collapseBtn71')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn71" onclick="toggleCodeBlock('cloneGroup71', 'expandBtn71', 'collapseBtn71')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup71"><code class="language-groovy text-sm text-gray-800">import grails.compiler.GrailsCompileStatic
-import grails.gorm.MultiTenant
-import org.hibernate.Session
-import org.hibernate.internal.SessionImpl
-import com.k_int.web.toolkit.refdata.CategoryId
-import com.k_int.web.toolkit.refdata.Defaults
-import com.k_int.web.toolkit.refdata.RefdataValue
-
-class</code></pre></div><div class="py-4"><p class="text-gray-600">service/grails-app/controllers/org/olf/PredictedPieceSetController.groovy (Line 54:3 - Line 68:4), service/grails-app/controllers/org/olf/PredictedPieceSetController.groovy (Line 34:5 - Line 48:7)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn72" onclick="toggleCodeBlock('cloneGroup72', 'expandBtn72', 'collapseBtn72')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn72" onclick="toggleCodeBlock('cloneGroup72', 'expandBtn72', 'collapseBtn72')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup72"><code class="language-groovy text-sm text-gray-800">)
+      if(templateMetadataType == 'enumeration'</code></pre></div><div class="py-4"><p class="text-gray-600">service/grails-app/controllers/org/olf/PredictedPieceSetController.groovy (Line 54:3 - Line 68:4), service/grails-app/controllers/org/olf/PredictedPieceSetController.groovy (Line 34:5 - Line 48:7)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn27" onclick="toggleCodeBlock('cloneGroup27', 'expandBtn27', 'collapseBtn27')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn27" onclick="toggleCodeBlock('cloneGroup27', 'expandBtn27', 'collapseBtn27')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup27"><code class="language-groovy text-sm text-gray-800">)
 
     if(ruleset?.templateConfig?.rules?.size()){
       for(int i=0;i&lt;ruleset?.templateConfig?.rules?.size();i++){
@@ -767,19 +251,7 @@ class</code></pre></div><div class="py-4"><p class="text-gray-600">service/grail
       }
     }
 
-    ArrayList&lt;InternalPiece&gt; ips</code></pre></div><div class="py-4"><p class="text-gray-600">service/grails-app/controllers/org/olf/LocaleController.groovy (Line 6:1 - Line 18:17), service/grails-app/controllers/org/olf/SerialController.groovy (Line 10:1 - Line 22:17)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn73" onclick="toggleCodeBlock('cloneGroup73', 'expandBtn73', 'collapseBtn73')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn73" onclick="toggleCodeBlock('cloneGroup73', 'expandBtn73', 'collapseBtn73')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup73"><code class="language-groovy text-sm text-gray-800">import grails.rest.*
-import grails.converters.*
-import org.grails.web.json.JSONObject
-import grails.gorm.transactions.Transactional
-import grails.gorm.multitenancy.CurrentTenant
-import groovy.json.JsonOutput
-import groovy.util.logging.Slf4j
-
-import java.util.regex.Pattern
-
-@Slf4j
-@CurrentTenant
-class LocaleController</code></pre></div><!-- Add more clone groups for .txt format as needed         // Add more clone groups for .txt format as needed--></div><a name="properties-clones"></a><h2 class="text-2xl font-semibold text-gray-700 mb-4">properties</h2><div class="divide-y divide-gray-200 border-b-2"><!-- Add more clone groups for .txt format as needed         // Add more clone groups for .txt format as needed--></div><a name="sql-clones"></a><h2 class="text-2xl font-semibold text-gray-700 mb-4">sql</h2><div class="divide-y divide-gray-200 border-b-2"><!-- Add more clone groups for .txt format as needed         // Add more clone groups for .txt format as needed--></div><a name="bash-clones"></a><h2 class="text-2xl font-semibold text-gray-700 mb-4">bash</h2><div class="divide-y divide-gray-200 border-b-2"><div class="py-4"><p class="text-gray-600">scripts/secure_enable.sh (Line 1:1 - Line 50:11), scripts/secure_register.sh (Line 1:1 - Line 50:5)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn74" onclick="toggleCodeBlock('cloneGroup74', 'expandBtn74', 'collapseBtn74')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn74" onclick="toggleCodeBlock('cloneGroup74', 'expandBtn74', 'collapseBtn74')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup74"><code class="language-bash text-sm text-gray-800">## This script logs into OKAPI and then registers and enables the module
+    ArrayList&lt;InternalPiece&gt; ips</code></pre></div><!-- Add more clone groups for .txt format as needed         // Add more clone groups for .txt format as needed--></div><a name="properties-clones"></a><h2 class="text-2xl font-semibold text-gray-700 mb-4">properties</h2><div class="divide-y divide-gray-200 border-b-2"><!-- Add more clone groups for .txt format as needed         // Add more clone groups for .txt format as needed--></div><a name="sql-clones"></a><h2 class="text-2xl font-semibold text-gray-700 mb-4">sql</h2><div class="divide-y divide-gray-200 border-b-2"><!-- Add more clone groups for .txt format as needed         // Add more clone groups for .txt format as needed--></div><a name="bash-clones"></a><h2 class="text-2xl font-semibold text-gray-700 mb-4">bash</h2><div class="divide-y divide-gray-200 border-b-2"><div class="py-4"><p class="text-gray-600">scripts/secure_enable.sh (Line 1:1 - Line 50:11), scripts/secure_register.sh (Line 1:1 - Line 50:5)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn28" onclick="toggleCodeBlock('cloneGroup28', 'expandBtn28', 'collapseBtn28')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn28" onclick="toggleCodeBlock('cloneGroup28', 'expandBtn28', 'collapseBtn28')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup28"><code class="language-bash text-sm text-gray-800">## This script logs into OKAPI and then registers and enables the module
 BASEDIR=$(dirname &quot;$0&quot;)
 
 MODULE_PORT=8076
@@ -828,7 +300,7 @@ AUTH_TOKEN=`../scripts/okapi-login -u $ST_UN -p $ST_PW -t supertenant`
 echo &quot;AUTH_TOKEN: $AUTH_TOKEN&quot;
 echo &quot;SUPERTENANT UN: $ST_UN, PASSWORD: $ST_PW&quot;
 
-ENABLE_DOC</code></pre></div><div class="py-4"><p class="text-gray-600">scripts/register_and_enable.sh (Line 14:27 - Line 29:5), scripts/register_and_enable_dev.sh (Line 14:30 - Line 29:5)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn75" onclick="toggleCodeBlock('cloneGroup75', 'expandBtn75', 'collapseBtn75')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn75" onclick="toggleCodeBlock('cloneGroup75', 'expandBtn75', 'collapseBtn75')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup75"><code class="language-bash text-sm text-gray-800">`
+ENABLE_DOC</code></pre></div><div class="py-4"><p class="text-gray-600">scripts/register_and_enable.sh (Line 14:27 - Line 29:5), scripts/register_and_enable_dev.sh (Line 14:30 - Line 29:5)</p><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2" id="expandBtn29" onclick="toggleCodeBlock('cloneGroup29', 'expandBtn29', 'collapseBtn29')">Show code</button><button class="bg-gray-500 text-white px-1 py-0.5 text-xs rounded focus:outline-none ml-2 hidden" id="collapseBtn29" onclick="toggleCodeBlock('cloneGroup29', 'expandBtn29', 'collapseBtn29')">Hide code</button><pre class="bg-gray-100 border border-gray-200 p-4 rounded mt-2 hidden" id="cloneGroup29"><code class="language-bash text-sm text-gray-800">`
 SVC_ID=`echo $DEP_DESC | jq -rc '.srvcId'`
 INS_ID=`echo $DEP_DESC | jq -rc '.instId'`
 
