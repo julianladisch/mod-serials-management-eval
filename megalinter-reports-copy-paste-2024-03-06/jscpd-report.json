@@ -1,6 +1,6 @@
 {
   "statistics": {
-    "detectionDate": "2024-03-07T12:11:22.032Z",
+    "detectionDate": "2024-03-07T15:58:22.052Z",
     "formats": {
       "groovy": {
         "sources": {
@@ -138,7 +138,7 @@
           },
           "service/grails-app/domain/org/olf/templateConfig/templateMetadataRuleFormat/EnumerationNumericLevelTMRF.groovy": {
             "lines": 52,
-            "tokens": 314,
+            "tokens": 293,
             "sources": 1,
             "clones": 0,
             "duplicatedLines": 0,
@@ -150,7 +150,7 @@
           },
           "service/grails-app/domain/org/olf/templateConfig/templateMetadataRuleFormat/ChronologyYearTMRF.groovy": {
             "lines": 41,
-            "tokens": 260,
+            "tokens": 251,
             "sources": 1,
             "clones": 0,
             "duplicatedLines": 0,
@@ -162,7 +162,7 @@
           },
           "service/grails-app/domain/org/olf/templateConfig/templateMetadataRuleFormat/ChronologyMonthTMRF.groovy": {
             "lines": 55,
-            "tokens": 396,
+            "tokens": 375,
             "sources": 1,
             "clones": 0,
             "duplicatedLines": 0,
@@ -174,13 +174,13 @@
           },
           "service/grails-app/domain/org/olf/templateConfig/templateMetadataRuleFormat/ChronologyDateTMRF.groovy": {
             "lines": 104,
-            "tokens": 866,
+            "tokens": 821,
             "sources": 1,
             "clones": 1,
             "duplicatedLines": 12,
             "duplicatedTokens": 103,
             "percentage": 11.54,
-            "percentageTokens": 11.89,
+            "percentageTokens": 12.55,
             "newDuplicatedLines": 0,
             "newClones": 0
           },
@@ -198,7 +198,7 @@
           },
           "service/grails-app/domain/org/olf/templateConfig/templateMetadataRule/TemplateMetadataRule.groovy": {
             "lines": 51,
-            "tokens": 294,
+            "tokens": 285,
             "sources": 1,
             "clones": 0,
             "duplicatedLines": 0,
@@ -210,31 +210,31 @@
           },
           "service/grails-app/domain/org/olf/templateConfig/templateMetadataRule/EnumerationTemplateMetadataRule.groovy": {
             "lines": 47,
-            "tokens": 330,
+            "tokens": 321,
             "sources": 1,
             "clones": 1,
             "duplicatedLines": 6,
             "duplicatedTokens": 116,
             "percentage": 12.77,
-            "percentageTokens": 35.15,
+            "percentageTokens": 36.14,
             "newDuplicatedLines": 0,
             "newClones": 0
           },
           "service/grails-app/domain/org/olf/templateConfig/templateMetadataRule/ChronologyTemplateMetadataRule.groovy": {
             "lines": 49,
-            "tokens": 335,
+            "tokens": 323,
             "sources": 1,
             "clones": 1,
             "duplicatedLines": 6,
             "duplicatedTokens": 116,
             "percentage": 12.24,
-            "percentageTokens": 34.63,
+            "percentageTokens": 35.91,
             "newDuplicatedLines": 0,
             "newClones": 0
           },
           "service/grails-app/domain/org/olf/recurrence/recurrencePattern/RecurrencePatternYearWeekday.groovy": {
             "lines": 40,
-            "tokens": 317,
+            "tokens": 293,
             "sources": 1,
             "clones": 0,
             "duplicatedLines": 0,
@@ -246,31 +246,31 @@
           },
           "service/grails-app/domain/org/olf/recurrence/recurrencePattern/RecurrencePatternYearMonthWeekday.groovy": {
             "lines": 46,
-            "tokens": 415,
+            "tokens": 352,
             "sources": 1,
             "clones": 2,
             "duplicatedLines": 14,
             "duplicatedTokens": 191,
             "percentage": 30.43,
-            "percentageTokens": 46.02,
+            "percentageTokens": 54.26,
             "newDuplicatedLines": 0,
             "newClones": 0
           },
           "service/grails-app/domain/org/olf/recurrence/recurrencePattern/RecurrencePatternYearDate.groovy": {
             "lines": 39,
-            "tokens": 327,
+            "tokens": 288,
             "sources": 1,
             "clones": 1,
             "duplicatedLines": 8,
             "duplicatedTokens": 101,
             "percentage": 20.51,
-            "percentageTokens": 30.89,
+            "percentageTokens": 35.07,
             "newDuplicatedLines": 0,
             "newClones": 0
           },
           "service/grails-app/domain/org/olf/recurrence/recurrencePattern/RecurrencePatternWeek.groovy": {
             "lines": 31,
-            "tokens": 192,
+            "tokens": 168,
             "sources": 1,
             "clones": 0,
             "duplicatedLines": 0,
@@ -282,13 +282,13 @@
           },
           "service/grails-app/domain/org/olf/recurrence/recurrencePattern/RecurrencePatternMonthWeekday.groovy": {
             "lines": 41,
-            "tokens": 318,
+            "tokens": 294,
             "sources": 1,
             "clones": 1,
             "duplicatedLines": 9,
             "duplicatedTokens": 109,
             "percentage": 21.95,
-            "percentageTokens": 34.28,
+            "percentageTokens": 37.07,
             "newDuplicatedLines": 0,
             "newClones": 0
           },
@@ -330,13 +330,13 @@
           },
           "service/grails-app/domain/org/olf/omission/omissionPattern/OmissionPatternWeekMonth.groovy": {
             "lines": 37,
-            "tokens": 258,
+            "tokens": 219,
             "sources": 1,
-            "clones": 1,
-            "duplicatedLines": 9,
-            "duplicatedTokens": 86,
-            "percentage": 24.32,
-            "percentageTokens": 33.33,
+            "clones": 0,
+            "duplicatedLines": 0,
+            "duplicatedTokens": 0,
+            "percentage": 0,
+            "percentageTokens": 0,
             "newDuplicatedLines": 0,
             "newClones": 0
           },
@@ -354,7 +354,7 @@
           },
           "service/grails-app/domain/org/olf/omission/omissionPattern/OmissionPatternMonth.groovy": {
             "lines": 49,
-            "tokens": 419,
+            "tokens": 341,
             "sources": 1,
             "clones": 0,
             "duplicatedLines": 0,
@@ -366,13 +366,13 @@
           },
           "service/grails-app/domain/org/olf/omission/omissionPattern/OmissionPatternIssueWeekMonth.groovy": {
             "lines": 51,
-            "tokens": 461,
+            "tokens": 422,
             "sources": 1,
-            "clones": 2,
-            "duplicatedLines": 21,
-            "duplicatedTokens": 239,
-            "percentage": 41.18,
-            "percentageTokens": 51.84,
+            "clones": 1,
+            "duplicatedLines": 10,
+            "duplicatedTokens": 147,
+            "percentage": 19.61,
+            "percentageTokens": 34.83,
             "newDuplicatedLines": 0,
             "newClones": 0
           },
@@ -390,13 +390,13 @@
           },
           "service/grails-app/domain/org/olf/omission/omissionPattern/OmissionPatternIssueMonth.groovy": {
             "lines": 44,
-            "tokens": 384,
+            "tokens": 345,
             "sources": 1,
-            "clones": 2,
-            "duplicatedLines": 18,
-            "duplicatedTokens": 211,
-            "percentage": 40.91,
-            "percentageTokens": 54.95,
+            "clones": 1,
+            "duplicatedLines": 9,
+            "duplicatedTokens": 125,
+            "percentage": 20.45,
+            "percentageTokens": 36.23,
             "newDuplicatedLines": 0,
             "newClones": 0
           },
@@ -414,7 +414,7 @@
           },
           "service/grails-app/domain/org/olf/omission/omissionPattern/OmissionPatternDayWeekday.groovy": {
             "lines": 31,
-            "tokens": 199,
+            "tokens": 175,
             "sources": 1,
             "clones": 0,
             "duplicatedLines": 0,
@@ -426,19 +426,19 @@
           },
           "service/grails-app/domain/org/olf/omission/omissionPattern/OmissionPatternDayWeekMonth.groovy": {
             "lines": 45,
-            "tokens": 347,
+            "tokens": 284,
             "sources": 1,
-            "clones": 2,
-            "duplicatedLines": 18,
-            "duplicatedTokens": 213,
-            "percentage": 40,
-            "percentageTokens": 61.38,
+            "clones": 1,
+            "duplicatedLines": 5,
+            "duplicatedTokens": 82,
+            "percentage": 11.11,
+            "percentageTokens": 28.87,
             "newDuplicatedLines": 0,
             "newClones": 0
           },
           "service/grails-app/domain/org/olf/omission/omissionPattern/OmissionPatternDayWeek.groovy": {
             "lines": 37,
-            "tokens": 244,
+            "tokens": 220,
             "sources": 1,
             "clones": 0,
             "duplicatedLines": 0,
@@ -450,13 +450,13 @@
           },
           "service/grails-app/domain/org/olf/omission/omissionPattern/OmissionPatternDayMonth.groovy": {
             "lines": 37,
-            "tokens": 254,
+            "tokens": 215,
             "sources": 1,
-            "clones": 1,
-            "duplicatedLines": 9,
-            "duplicatedTokens": 86,
-            "percentage": 24.32,
-            "percentageTokens": 33.86,
+            "clones": 0,
+            "duplicatedLines": 0,
+            "duplicatedTokens": 0,
+            "percentage": 0,
+            "percentageTokens": 0,
             "newDuplicatedLines": 0,
             "newClones": 0
           },
@@ -546,13 +546,13 @@
           },
           "service/grails-app/domain/org/olf/combination/combinationPattern/CombinationPatternWeekMonth.groovy": {
             "lines": 38,
-            "tokens": 260,
+            "tokens": 221,
             "sources": 1,
-            "clones": 2,
-            "duplicatedLines": 14,
-            "duplicatedTokens": 192,
-            "percentage": 36.84,
-            "percentageTokens": 73.85,
+            "clones": 1,
+            "duplicatedLines": 5,
+            "duplicatedTokens": 106,
+            "percentage": 13.16,
+            "percentageTokens": 47.96,
             "newDuplicatedLines": 0,
             "newClones": 0
           },
@@ -570,7 +570,7 @@
           },
           "service/grails-app/domain/org/olf/combination/combinationPattern/CombinationPatternMonth.groovy": {
             "lines": 33,
-            "tokens": 224,
+            "tokens": 185,
             "sources": 1,
             "clones": 0,
             "duplicatedLines": 0,
@@ -582,13 +582,13 @@
           },
           "service/grails-app/domain/org/olf/combination/combinationPattern/CombinationPatternIssueWeekMonth.groovy": {
             "lines": 52,
-            "tokens": 461,
+            "tokens": 422,
             "sources": 1,
-            "clones": 4,
-            "duplicatedLines": 31,
-            "duplicatedTokens": 419,
-            "percentage": 59.62,
-            "percentageTokens": 90.89,
+            "clones": 3,
+            "duplicatedLines": 20,
+            "duplicatedTokens": 327,
+            "percentage": 38.46,
+            "percentageTokens": 77.49,
             "newDuplicatedLines": 0,
             "newClones": 0
           },
@@ -606,13 +606,13 @@
           },
           "service/grails-app/domain/org/olf/combination/combinationPattern/CombinationPatternIssueMonth.groovy": {
             "lines": 47,
-            "tokens": 417,
+            "tokens": 378,
             "sources": 1,
-            "clones": 3,
-            "duplicatedLines": 23,
-            "duplicatedTokens": 301,
-            "percentage": 48.94,
-            "percentageTokens": 72.18,
+            "clones": 2,
+            "duplicatedLines": 14,
+            "duplicatedTokens": 215,
+            "percentage": 29.79,
+            "percentageTokens": 56.88,
             "newDuplicatedLines": 0,
             "newClones": 0
           },
@@ -630,7 +630,7 @@
           },
           "service/grails-app/domain/org/olf/combination/combinationPattern/CombinationPatternDayWeekday.groovy": {
             "lines": 32,
-            "tokens": 201,
+            "tokens": 177,
             "sources": 1,
             "clones": 0,
             "duplicatedLines": 0,
@@ -642,19 +642,19 @@
           },
           "service/grails-app/domain/org/olf/combination/combinationPattern/CombinationPatternDayWeekMonth.groovy": {
             "lines": 46,
-            "tokens": 349,
+            "tokens": 286,
             "sources": 1,
-            "clones": 2,
-            "duplicatedLines": 18,
-            "duplicatedTokens": 237,
-            "percentage": 39.13,
-            "percentageTokens": 67.91,
+            "clones": 1,
+            "duplicatedLines": 5,
+            "duplicatedTokens": 106,
+            "percentage": 10.87,
+            "percentageTokens": 37.06,
             "newDuplicatedLines": 0,
             "newClones": 0
           },
           "service/grails-app/domain/org/olf/combination/combinationPattern/CombinationPatternDayWeek.groovy": {
             "lines": 38,
-            "tokens": 246,
+            "tokens": 222,
             "sources": 1,
             "clones": 0,
             "duplicatedLines": 0,
@@ -666,13 +666,13 @@
           },
           "service/grails-app/domain/org/olf/combination/combinationPattern/CombinationPatternDayMonth.groovy": {
             "lines": 38,
-            "tokens": 256,
+            "tokens": 217,
             "sources": 1,
-            "clones": 1,
-            "duplicatedLines": 9,
-            "duplicatedTokens": 86,
-            "percentage": 23.68,
-            "percentageTokens": 33.59,
+            "clones": 0,
+            "duplicatedLines": 0,
+            "duplicatedTokens": 0,
+            "percentage": 0,
+            "percentageTokens": 0,
             "newDuplicatedLines": 0,
             "newClones": 0
           },
@@ -762,7 +762,7 @@
           },
           "service/grails-app/domain/org/olf/recurrence/RecurrenceRule.groovy": {
             "lines": 64,
-            "tokens": 422,
+            "tokens": 398,
             "sources": 1,
             "clones": 0,
             "duplicatedLines": 0,
@@ -774,7 +774,7 @@
           },
           "service/grails-app/domain/org/olf/recurrence/Recurrence.groovy": {
             "lines": 58,
-            "tokens": 374,
+            "tokens": 359,
             "sources": 1,
             "clones": 0,
             "duplicatedLines": 0,
@@ -786,7 +786,7 @@
           },
           "service/grails-app/domain/org/olf/omission/OmissionRule.groovy": {
             "lines": 52,
-            "tokens": 350,
+            "tokens": 296,
             "sources": 1,
             "clones": 0,
             "duplicatedLines": 0,
@@ -882,7 +882,7 @@
           },
           "service/grails-app/domain/org/olf/combination/CombinationRule.groovy": {
             "lines": 58,
-            "tokens": 348,
+            "tokens": 324,
             "sources": 1,
             "clones": 0,
             "duplicatedLines": 0,
@@ -966,7 +966,7 @@
           },
           "service/grails-app/domain/org/olf/SerialRuleset.groovy": {
             "lines": 79,
-            "tokens": 425,
+            "tokens": 413,
             "sources": 1,
             "clones": 0,
             "duplicatedLines": 0,
@@ -1002,7 +1002,7 @@
           },
           "service/grails-app/domain/org/olf/Serial.groovy": {
             "lines": 62,
-            "tokens": 324,
+            "tokens": 315,
             "sources": 1,
             "clones": 0,
             "duplicatedLines": 0,
@@ -1159,13 +1159,13 @@
         },
         "total": {
           "lines": 4890,
-          "tokens": 33395,
+          "tokens": 32306,
           "sources": 96,
-          "clones": 28,
-          "duplicatedLines": 253,
-          "duplicatedTokens": 3114,
-          "percentage": 5.17,
-          "percentageTokens": 9.32,
+          "clones": 23,
+          "duplicatedLines": 202,
+          "duplicatedTokens": 2633,
+          "percentage": 4.13,
+          "percentageTokens": 8.15,
           "newDuplicatedLines": 0,
           "newClones": 0
         }
@@ -1569,13 +1569,13 @@
     },
     "total": {
       "lines": 6040,
-      "tokens": 38300,
+      "tokens": 37211,
       "sources": 125,
-      "clones": 30,
-      "duplicatedLines": 317,
-      "duplicatedTokens": 3473,
-      "percentage": 5.25,
-      "percentageTokens": 9.07,
+      "clones": 25,
+      "duplicatedLines": 266,
+      "duplicatedTokens": 2992,
+      "percentage": 4.4,
+      "percentageTokens": 8.04,
       "newDuplicatedLines": 0,
       "newClones": 0
     }
@@ -1953,12 +1953,12 @@
         "startLoc": {
           "line": 49,
           "column": 20,
-          "position": 281
+          "position": 236
         },
         "endLoc": {
           "line": 61,
           "column": 7,
-          "position": 384
+          "position": 339
         }
       },
       "secondFile": {
@@ -1989,12 +1989,12 @@
         "startLoc": {
           "line": 44,
           "column": 2,
-          "position": 219
+          "position": 207
         },
         "endLoc": {
           "line": 50,
           "column": 2,
-          "position": 335
+          "position": 323
         }
       },
       "secondFile": {
@@ -2004,12 +2004,12 @@
         "startLoc": {
           "line": 42,
           "column": 2,
-          "position": 214
+          "position": 205
         },
         "endLoc": {
           "line": 48,
           "column": 2,
-          "position": 330
+          "position": 321
         }
       }
     },
@@ -2025,12 +2025,12 @@
         "startLoc": {
           "line": 25,
           "column": 3,
-          "position": 128
+          "position": 104
         },
         "endLoc": {
           "line": 34,
           "column": 2,
-          "position": 237
+          "position": 213
         }
       },
       "secondFile": {
@@ -2040,12 +2040,12 @@
         "startLoc": {
           "line": 30,
           "column": 3,
-          "position": 196
+          "position": 133
         },
         "endLoc": {
           "line": 39,
           "column": 6,
-          "position": 305
+          "position": 242
         }
       }
     },
@@ -2076,12 +2076,12 @@
         "startLoc": {
           "line": 23,
           "column": 3,
-          "position": 140
+          "position": 101
         },
         "endLoc": {
           "line": 31,
           "column": 6,
-          "position": 241
+          "position": 202
         }
       }
     },
@@ -2097,12 +2097,12 @@
         "startLoc": {
           "line": 41,
           "column": 15,
-          "position": 265
+          "position": 202
         },
         "endLoc": {
           "line": 46,
           "column": 2,
-          "position": 347
+          "position": 284
         }
       },
       "secondFile": {
@@ -2112,84 +2112,12 @@
         "startLoc": {
           "line": 42,
           "column": 5,
-          "position": 333
+          "position": 270
         },
         "endLoc": {
           "line": 47,
           "column": 2,
-          "position": 415
-        }
-      }
-    },
-    {
-      "format": "groovy",
-      "lines": 10,
-      "fragment": "> {\n\n  Integer week\n\n  @CategoryId(value=\"Global.Month\", defaultInternal=true)\n  @Defaults(['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'])\n  RefdataValue month\n\n  static mapping = {\n     week column: 'cpwm_week'",
-      "tokens": 0,
-      "firstFile": {
-        "name": "service/grails-app/domain/org/olf/combination/combinationPattern/CombinationPatternWeekMonth.groovy",
-        "start": 16,
-        "end": 25,
-        "startLoc": {
-          "line": 16,
-          "column": 28,
-          "position": 48
-        },
-        "endLoc": {
-          "line": 25,
-          "column": 12,
-          "position": 134
-        }
-      },
-      "secondFile": {
-        "name": "service/grails-app/domain/org/olf/omission/omissionPattern/OmissionPatternWeekMonth.groovy",
-        "start": 15,
-        "end": 24,
-        "startLoc": {
-          "line": 15,
-          "column": 25,
-          "position": 46
-        },
-        "endLoc": {
-          "line": 24,
-          "column": 12,
-          "position": 132
-        }
-      }
-    },
-    {
-      "format": "groovy",
-      "lines": 12,
-      "fragment": "> {\n\n  Integer issue\n\n  Integer week\n\n  @CategoryId(value=\"Global.Month\", defaultInternal=true)\n  @Defaults(['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'])\n  RefdataValue month\n\n  static mapping = {\n    issue column: 'cpiwm_issue'",
-      "tokens": 0,
-      "firstFile": {
-        "name": "service/grails-app/domain/org/olf/combination/combinationPattern/CombinationPatternIssueWeekMonth.groovy",
-        "start": 16,
-        "end": 27,
-        "startLoc": {
-          "line": 16,
-          "column": 33,
-          "position": 48
-        },
-        "endLoc": {
-          "line": 27,
-          "column": 14,
-          "position": 140
-        }
-      },
-      "secondFile": {
-        "name": "service/grails-app/domain/org/olf/omission/omissionPattern/OmissionPatternIssueWeekMonth.groovy",
-        "start": 15,
-        "end": 26,
-        "startLoc": {
-          "line": 15,
-          "column": 30,
-          "position": 46
-        },
-        "endLoc": {
-          "line": 26,
-          "column": 14,
-          "position": 138
+          "position": 352
         }
       }
     },
@@ -2205,12 +2133,12 @@
         "startLoc": {
           "line": 38,
           "column": 2,
-          "position": 210
+          "position": 171
         },
         "endLoc": {
           "line": 48,
           "column": 8,
-          "position": 357
+          "position": 318
         }
       },
       "secondFile": {
@@ -2220,12 +2148,12 @@
         "startLoc": {
           "line": 38,
           "column": 2,
-          "position": 211
+          "position": 172
         },
         "endLoc": {
           "line": 48,
           "column": 7,
-          "position": 358
+          "position": 319
         }
       }
     },
@@ -2292,48 +2220,12 @@
         "startLoc": {
           "line": 48,
           "column": 15,
-          "position": 371
+          "position": 332
         },
         "endLoc": {
           "line": 53,
           "column": 2,
-          "position": 461
-        }
-      }
-    },
-    {
-      "format": "groovy",
-      "lines": 10,
-      "fragment": "> {\n\n  Integer issue\n\n  @CategoryId(value=\"Global.Month\", defaultInternal=true)\n  @Defaults(['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'])\n  RefdataValue month\n\n  static mapping = {\n    issue column: 'cpim_issue'",
-      "tokens": 0,
-      "firstFile": {
-        "name": "service/grails-app/domain/org/olf/combination/combinationPattern/CombinationPatternIssueMonth.groovy",
-        "start": 16,
-        "end": 25,
-        "startLoc": {
-          "line": 16,
-          "column": 29,
-          "position": 48
-        },
-        "endLoc": {
-          "line": 25,
-          "column": 13,
-          "position": 134
-        }
-      },
-      "secondFile": {
-        "name": "service/grails-app/domain/org/olf/omission/omissionPattern/OmissionPatternIssueMonth.groovy",
-        "start": 15,
-        "end": 24,
-        "startLoc": {
-          "line": 15,
-          "column": 26,
-          "position": 46
-        },
-        "endLoc": {
-          "line": 24,
-          "column": 13,
-          "position": 132
+          "position": 422
         }
       }
     },
@@ -2349,12 +2241,12 @@
         "startLoc": {
           "line": 34,
           "column": 2,
-          "position": 188
+          "position": 149
         },
         "endLoc": {
           "line": 43,
           "column": 8,
-          "position": 313
+          "position": 274
         }
       },
       "secondFile": {
@@ -2364,12 +2256,12 @@
         "startLoc": {
           "line": 34,
           "column": 2,
-          "position": 191
+          "position": 152
         },
         "endLoc": {
           "line": 42,
           "column": 7,
-          "position": 316
+          "position": 277
         }
       }
     },
@@ -2385,12 +2277,12 @@
         "startLoc": {
           "line": 43,
           "column": 11,
-          "position": 327
+          "position": 288
         },
         "endLoc": {
           "line": 48,
           "column": 2,
-          "position": 417
+          "position": 378
         }
       },
       "secondFile": {
@@ -2400,48 +2292,12 @@
         "startLoc": {
           "line": 48,
           "column": 15,
-          "position": 371
+          "position": 332
         },
         "endLoc": {
           "line": 53,
           "column": 2,
-          "position": 461
-        }
-      }
-    },
-    {
-      "format": "groovy",
-      "lines": 14,
-      "fragment": "> {\n\n  @CategoryId(value=\"Global.Weekday\", defaultInternal=true)\n  @Defaults(['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'])\n  RefdataValue weekday\n\n  Integer week\n\n  @CategoryId(value=\"Global.Month\", defaultInternal=true)\n  @Defaults(['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'])\n  RefdataValue month\n\n  static mapping = {\n    weekday column: 'cpdwm_weekday_fk'",
-      "tokens": 0,
-      "firstFile": {
-        "name": "service/grails-app/domain/org/olf/combination/combinationPattern/CombinationPatternDayWeekMonth.groovy",
-        "start": 16,
-        "end": 29,
-        "startLoc": {
-          "line": 16,
-          "column": 31,
-          "position": 48
-        },
-        "endLoc": {
-          "line": 29,
-          "column": 19,
-          "position": 179
-        }
-      },
-      "secondFile": {
-        "name": "service/grails-app/domain/org/olf/omission/omissionPattern/OmissionPatternDayWeekMonth.groovy",
-        "start": 15,
-        "end": 28,
-        "startLoc": {
-          "line": 15,
-          "column": 28,
-          "position": 46
-        },
-        "endLoc": {
-          "line": 28,
-          "column": 19,
-          "position": 177
+          "position": 422
         }
       }
     },
@@ -2457,12 +2313,12 @@
         "startLoc": {
           "line": 42,
           "column": 3,
-          "position": 243
+          "position": 180
         },
         "endLoc": {
           "line": 47,
           "column": 2,
-          "position": 349
+          "position": 286
         }
       },
       "secondFile": {
@@ -2472,48 +2328,12 @@
         "startLoc": {
           "line": 35,
           "column": 3,
-          "position": 181
+          "position": 142
         },
         "endLoc": {
           "line": 47,
           "column": 2,
-          "position": 415
-        }
-      }
-    },
-    {
-      "format": "groovy",
-      "lines": 10,
-      "fragment": "> {\n\n  Integer day\n\n  @CategoryId(value=\"Global.Month\", defaultInternal=true)\n  @Defaults(['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'])\n  RefdataValue month\n\n  static mapping = {\n      day column: 'cpdm_day'",
-      "tokens": 0,
-      "firstFile": {
-        "name": "service/grails-app/domain/org/olf/combination/combinationPattern/CombinationPatternDayMonth.groovy",
-        "start": 15,
-        "end": 24,
-        "startLoc": {
-          "line": 15,
-          "column": 27,
-          "position": 46
-        },
-        "endLoc": {
-          "line": 24,
-          "column": 11,
-          "position": 132
-        }
-      },
-      "secondFile": {
-        "name": "service/grails-app/domain/org/olf/omission/omissionPattern/OmissionPatternDayMonth.groovy",
-        "start": 14,
-        "end": 23,
-        "startLoc": {
-          "line": 14,
-          "column": 24,
-          "position": 44
-        },
-        "endLoc": {
-          "line": 23,
-          "column": 11,
-          "position": 130
+          "position": 352
         }
       }
     },
